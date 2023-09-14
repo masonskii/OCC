@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Code Compiler</title>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .input-label {
+      font-weight: bold;
+    }
+
+    .code-input {
+      width: 100%;
+      height: 200px;
+    }
+
+    .language-select {
+      margin-top: 10px;
+    }
+
+    .submit-button {
+      margin-top: 20px;
+    }
+
+    .output-label {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    .output {
+      border: 1px solid #ccc;
+      padding: 10px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Online Code Compiler</h1>
+    <label class="input-label">Select language:</label>
+    <select id="language" class="language-select">
+      <option value="python">Python</option>
+      <option value="cpp">C++</option>
+      <option value="java">Java</option>
+    </select>
+    <label class="input-label">Enter your code:</label>
+    <textarea id="code" class="code-input"></textarea>
+    <button id="run-button" class="submit-button">Run</button>
+    <label class="output-label">Output:</label>
+    <pre id="output" class="output"></pre>
+  </div>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      const codeInput = document.getElementById('code');
+      const languageSelect = document.getElementById('language');
+      const runButton = document.getElementById('run-button');
+      const outputArea = document.getElementById('output');
+
+      runButton.addEventListener('click', function() {
+        const code = codeInput.value;
+        const language = languageSelect.value;
+        executeCode(code, language);
+      });
+
+      function executeCode(code, language) {
+        const codeData = {
+          code: code,
+          language: language
+        };
+
+        fetch('/runcode', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(codeData)
+        })
+        .then(response => response.json())
+        .then(result => {
+          outputArea.innerText = result.output || result.error || 'No output';
+        })
+        .catch(error => {
+          outputArea.innerText = 'Error: ' + error.message;
+        });
+      }
+    });
+  </script>
+</body>
+</html>
