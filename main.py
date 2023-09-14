@@ -17,11 +17,14 @@ def run_code():
     # If language is Python, use the same logic as before
     if language == 'python':
         try:
-            # Execute the code
-            exec_globals = {}
-            exec_locals = {'output': ''}
-            exec(code, exec_globals, exec_locals)
-            output = exec_locals.get('output', '')
+            import io
+            from contextlib import redirect_stdout
+
+            f = io.StringIO()
+            with redirect_stdout(f):
+                exec(code, {}, {'output': None})
+
+            output = f.getvalue().strip()
             error = None
         except Exception as e:
             output = ''
@@ -66,15 +69,15 @@ def run_code():
     elif language == 'java':
         try:
             # Write the code to a file
-            with open('Main.java', 'w') as file:
+            with open('builds/java/Main.java', 'w') as file:
                 file.write(code)
 
             # Compile the code
-            compile_cmd = ['javac', './Main.java']
+            compile_cmd = ['javac', ' builds/java/Main.java']
             subprocess.run(compile_cmd, check=True)
 
             # Execute the compiled code
-            execute_cmd = ['java', 'Main']
+            execute_cmd = ['java', 'builds/java/Main']
             process = subprocess.run(execute_cmd, capture_output=True, text=True)
 
             # Get the output and error (if any)

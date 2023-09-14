@@ -1,7 +1,6 @@
-package org.example;
+#include <iostream>
 
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
+int main(){
+std::cout<<24;
+return 0;
 }
