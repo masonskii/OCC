@@ -1,0 +1,65 @@
+// Подключение bootstrap стилей
+@import "~bootstrap/scss/bootstrap";
+
+// Определение пользовательского цвета
+$primary-color: #3498db;
+
+// Определение пользовательского шрифта
+$font-stack: 'Segoe UI', sans-serif;
+
+// Определение пользовательского маргина
+$margin: 1rem;
+
+// Основной стиль и расположение формы
+.container {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: $margin;
+    border-radius: $margin;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      .form-group {
+        margin-bottom: $margin;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      textarea {
+        height: 300px;
+      }
+
+      .btn {
+        background-color: $primary-color;
+        border: none;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}
+
+// Стилизация вывода
+#output {
+  margin-top: $margin;
+  padding: $margin;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: $font-stack;
+}
