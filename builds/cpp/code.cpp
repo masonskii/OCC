@@ -1,7 +1,6 @@
 #include <iostream>
 
-
 int main(){
-	std::cout<<"Hello Sasha";	
-	return -1;
+	std::cout<<6-2;
+	return 0;
 }

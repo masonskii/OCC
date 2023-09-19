@@ -1,0 +1,67 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\VSCodeProject\\OPC\\builds\\cs\\cs.csproj": {}
+  },
+  "projects": {
+    "E:\\VSCodeProject\\OPC\\builds\\cs\\cs.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\VSCodeProject\\OPC\\builds\\cs\\cs.csproj",
+        "projectName": "cs",
+        "projectPath": "E:\\VSCodeProject\\OPC\\builds\\cs\\cs.csproj",
+        "packagesPath": "C:\\Users\\gavri\\.nuget\\packages\\",
+        "outputPath": "E:\\VSCodeProject\\OPC\\builds\\cs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\vschared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\gavri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

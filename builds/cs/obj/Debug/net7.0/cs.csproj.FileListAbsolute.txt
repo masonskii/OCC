@@ -1,0 +1,14 @@
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.GeneratedMSBuildEditorConfig.editorconfig
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.AssemblyInfoInputs.cache
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.AssemblyInfo.cs
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.csproj.CoreCompileInputs.cache
+E:\VSCodeProject\OPC\builds\cs\bin\Debug\net7.0\cs.exe
+E:\VSCodeProject\OPC\builds\cs\bin\Debug\net7.0\cs.deps.json
+E:\VSCodeProject\OPC\builds\cs\bin\Debug\net7.0\cs.runtimeconfig.json
+E:\VSCodeProject\OPC\builds\cs\bin\Debug\net7.0\cs.dll
+E:\VSCodeProject\OPC\builds\cs\bin\Debug\net7.0\cs.pdb
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.dll
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\refint\cs.dll
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.pdb
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\cs.genruntimeconfig.cache
+E:\VSCodeProject\OPC\builds\cs\obj\Debug\net7.0\ref\cs.dll

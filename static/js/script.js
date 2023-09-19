@@ -7,8 +7,14 @@ window.addEventListener('DOMContentLoaded', function() {
     // Создайте объект для связи языков программирования с их модами
     const languageModes = {
         python: 'python',
-        javascript: 'javascript',
-        // Добавьте другие языки и соответствующие им псевдонимы модов для CodeMirror
+        javascript: 'js',
+        c: 'c',
+        cpp: 'cpp',
+        cs: "cs",
+        java: "java",
+        go: "go",
+        ruby: "ruby"
+            // Добавьте другие языки и соответствующие им псевдонимы модов для CodeMirror
     };
 
     const initialLanguage = languageSelect.value;
@@ -47,7 +53,7 @@ window.addEventListener('DOMContentLoaded', function() {
                 outputArea.innerText = result.output || result.error || 'No output';
             })
             .catch(error => {
-                setResuoutputArea.innerText = 'Error: ' + error.message;
+                outputArea.innerText = 'Error: ' + error.message;
             });
     }
 
@@ -58,6 +64,9 @@ window.addEventListener('DOMContentLoaded', function() {
 
         switch (selectedLanguage) {
             case "python":
+                codeEditor.setValue("print('Hello,world!')")
+                codeEditor.focus()
+                codeEditor.setCursor(1, 0)
                 mode = "python";
                 break;
             case "c":
@@ -73,15 +82,27 @@ window.addEventListener('DOMContentLoaded', function() {
                 mode = "text/x-java";
                 break;
             case "js":
+                codeEditor.setValue("console.log('Hello,world!')")
+                codeEditor.focus()
+                codeEditor.setCursor(1, 0)
                 mode = "javascript";
                 break;
             case "ruby":
+                codeEditor.setValue("puts 'hello, world!'")
+                codeEditor.focus()
+                codeEditor.setCursor(1, 0)
                 mode = "ruby";
                 break;
             case "go":
                 mode = "go";
+                codeEditor.focus()
+                codeEditor.setValue("package main")
+                codeEditor.setCursor(1, 0)
                 break;
             default:
+                codeEditor.setValue("print('Hello,world!')")
+                codeEditor.focus()
+                codeEditor.setCursor(1, 0)
                 mode = "python";
         }
         codeEditor.setOption("mode", mode);
