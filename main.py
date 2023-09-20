@@ -1,7 +1,6 @@
 import subprocess
 from flask import Flask, render_template, request, jsonify
 from utils.execute import execute_code
-import logging
 
 app = Flask(__name__)
 

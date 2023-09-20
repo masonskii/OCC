@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.64.0/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.64.0/theme/material-darker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.64.0/addon/hint/show-hint.min.css">
-
+    <script src="https://cdn.jsdelivr.net/npm/filereader@0.10.3/lib/FileReader.min.js"></script>
     <!-- Наш пользовательский CSS файл -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}?v=2">
 </head>
@@ -27,19 +27,51 @@
           <option value="ruby">Ruby</option>
           <option value="java">Java (not working now)</option>
         </select>
-    <button id="run-button" class="submit-button btn btn-primary">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-          <path d="M10.804 7.166L4.86 3.57a.91.91 0 0 0-1.29.861v9.138a.91.91 0 0 0 1.29.859l5.944-3.597a.91.91 0 0 0 0-1.56z"/>
-        </svg>
-    </button>
-        <div class="io-container">
-            <div class="input-container">
+        <button id="run-button" class="submit-button btn btn-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+        </button>
+        <input type="file" id="file-input" class="file-input">
+        <button id="translate-button">Перевести</button>
+        <div id="translator" style="display: none;">
+          <h3>Переводчик текста</h3>
+            <div class="tr-conteiner">
+          <div class="input-container-tr">
+              <select id="language-select-before">
+              <option value="en">Английский</option>
+              <option value="fr">Французский</option>
+              <option value="de">Немецкий</option>
+              <option value="ru">Русский</option>
+            </select>
+              <textarea id="text-input" placeholder="Введите текст"></textarea>
+          </div>
+          <div class="output-container-tr">
+              <select id="language-select-after">
+              <option value="en">Английский</option>
+              <option value="fr">Французский</option>
+              <option value="de">Немецкий</option>
+              <option value="ru">Русский</option>
+            </select>
+            <textarea id="translation-output" readonly></textarea>
+          </div>
+                </div>
+            <button id="tr-button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+                <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+            </button>
+        </div>
+        <div class="io-container" id="io-container">
+            <div class="input-container" id="input-container">
                 <label class="input-label">Enter your code:</label>
               <textarea id="code" class="code-input"></textarea>
             </div>
             <div class="output-container">
                 <label class="output-label">Output:</label>
-              <pre id="output" class="output"></pre>
+              <textarea id="output" class="output"></textarea>
             </div>
         </div>
     </div>

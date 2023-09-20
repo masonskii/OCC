@@ -1145,3 +1145,600 @@ Did you mean?  puts
 2023-09-19 23:18:39,677 DEBUG: Code file created at builds/ruby/code.ruby
 2023-09-19 23:18:39,814 INFO: Code executed, stdout: hello, world!, stderr: None
 2023-09-19 23:18:39,815 INFO: 127.0.0.1 - - [19/Sep/2023 23:18:39] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:21:35,973 DEBUG: Code execution started
+2023-09-20 13:21:35,979 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 13:21:35,979 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 13:21:47,722 INFO: 127.0.0.1 - - [20/Sep/2023 13:21:47] "GET / HTTP/1.1" 200 -
+2023-09-20 13:21:47,830 INFO: 127.0.0.1 - - [20/Sep/2023 13:21:47] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 13:21:47,831 INFO: 127.0.0.1 - - [20/Sep/2023 13:21:47] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:21:48,631 INFO: 127.0.0.1 - - [20/Sep/2023 13:21:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-09-20 13:21:59,138 INFO: start executing python code
+2023-09-20 13:21:59,138 DEBUG: Python code executed, output: 23
+2023-09-20 13:21:59,138 INFO: 127.0.0.1 - - [20/Sep/2023 13:21:59] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:22:00,599 INFO: start executing python code
+2023-09-20 13:22:00,599 DEBUG: Python code executed, output: 23
+2023-09-20 13:22:00,599 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:00] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:22:07,104 INFO: start executing python code
+2023-09-20 13:22:07,104 DEBUG: Python code executed, output: 233
+2023-09-20 13:22:07,105 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:07] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:22:16,477 INFO: start executing python code
+2023-09-20 13:22:16,477 DEBUG: Python code executed, output: 23
+2023-09-20 13:22:16,477 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:16] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:22:28,175 DEBUG: Code execution started
+2023-09-20 13:22:28,183 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 13:22:28,183 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 13:22:31,218 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:31] "GET / HTTP/1.1" 200 -
+2023-09-20 13:22:31,275 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:31] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:22:31,275 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:31] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:22:56,096 INFO: start executing python code
+2023-09-20 13:22:56,096 DEBUG: Python code executed, output: {'Hello': 'world!'}
+2023-09-20 13:22:56,097 INFO: 127.0.0.1 - - [20/Sep/2023 13:22:56] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:23:10,002 INFO: start executing python code
+2023-09-20 13:23:10,003 INFO: 127.0.0.1 - - [20/Sep/2023 13:23:10] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:23:16,009 INFO: start executing python code
+2023-09-20 13:23:16,009 INFO: 127.0.0.1 - - [20/Sep/2023 13:23:16] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:23:36,754 INFO: start executing python code
+2023-09-20 13:23:36,755 INFO: 127.0.0.1 - - [20/Sep/2023 13:23:36] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:23:53,253 INFO: start executing python code
+2023-09-20 13:23:53,253 INFO: 127.0.0.1 - - [20/Sep/2023 13:23:53] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:24:00,968 INFO: start executing python code
+2023-09-20 13:24:00,969 INFO: 127.0.0.1 - - [20/Sep/2023 13:24:00] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:24:14,820 INFO: start executing python code
+2023-09-20 13:24:14,821 INFO: 127.0.0.1 - - [20/Sep/2023 13:24:14] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:24:43,888 INFO: start executing python code
+2023-09-20 13:24:43,889 DEBUG: Python code executed, output: {'Hello': 'world!', 'object': {'num': 23}}
+2023-09-20 13:24:43,889 INFO: 127.0.0.1 - - [20/Sep/2023 13:24:43] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:24:53,989 INFO: start executing python code
+2023-09-20 13:24:53,990 DEBUG: Python code executed, output: {'Hello': 'world!', 'object': {'num': 23}}
+2023-09-20 13:24:53,990 INFO: 127.0.0.1 - - [20/Sep/2023 13:24:53] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:25:08,295 INFO: 127.0.0.1 - - [20/Sep/2023 13:25:08] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:25:26,504 INFO: 127.0.0.1 - - [20/Sep/2023 13:25:26] "GET / HTTP/1.1" 200 -
+2023-09-20 13:25:26,519 INFO: 127.0.0.1 - - [20/Sep/2023 13:25:26] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:25:26,519 INFO: 127.0.0.1 - - [20/Sep/2023 13:25:26] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 13:25:37,089 INFO: start executing python code
+2023-09-20 13:25:37,090 INFO: 127.0.0.1 - - [20/Sep/2023 13:25:37] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 13:37:18,073 INFO: 127.0.0.1 - - [20/Sep/2023 13:37:18] "GET / HTTP/1.1" 200 -
+2023-09-20 13:37:18,096 INFO: 127.0.0.1 - - [20/Sep/2023 13:37:18] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:37:18,102 INFO: 127.0.0.1 - - [20/Sep/2023 13:37:18] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:38:59,716 INFO: 127.0.0.1 - - [20/Sep/2023 13:38:59] "GET / HTTP/1.1" 200 -
+2023-09-20 13:38:59,737 INFO: 127.0.0.1 - - [20/Sep/2023 13:38:59] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:38:59,738 INFO: 127.0.0.1 - - [20/Sep/2023 13:38:59] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:41:02,010 INFO: 127.0.0.1 - - [20/Sep/2023 13:41:02] "GET / HTTP/1.1" 200 -
+2023-09-20 13:41:02,031 INFO: 127.0.0.1 - - [20/Sep/2023 13:41:02] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:41:02,031 INFO: 127.0.0.1 - - [20/Sep/2023 13:41:02] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:41:33,149 INFO: 127.0.0.1 - - [20/Sep/2023 13:41:33] "GET / HTTP/1.1" 200 -
+2023-09-20 13:41:33,172 INFO: 127.0.0.1 - - [20/Sep/2023 13:41:33] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:41:33,172 INFO: 127.0.0.1 - - [20/Sep/2023 13:41:33] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:42:59,411 DEBUG: Code execution started
+2023-09-20 13:42:59,418 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 13:42:59,418 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 13:43:01,324 INFO: 127.0.0.1 - - [20/Sep/2023 13:43:01] "GET / HTTP/1.1" 200 -
+2023-09-20 13:43:01,386 INFO: 127.0.0.1 - - [20/Sep/2023 13:43:01] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:43:01,386 INFO: 127.0.0.1 - - [20/Sep/2023 13:43:01] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:43:53,673 INFO: 127.0.0.1 - - [20/Sep/2023 13:43:53] "GET / HTTP/1.1" 200 -
+2023-09-20 13:43:53,692 INFO: 127.0.0.1 - - [20/Sep/2023 13:43:53] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:43:53,693 INFO: 127.0.0.1 - - [20/Sep/2023 13:43:53] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:44:19,185 INFO: 127.0.0.1 - - [20/Sep/2023 13:44:19] "GET / HTTP/1.1" 200 -
+2023-09-20 13:44:19,203 INFO: 127.0.0.1 - - [20/Sep/2023 13:44:19] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:44:19,203 INFO: 127.0.0.1 - - [20/Sep/2023 13:44:19] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:52:29,669 INFO: 127.0.0.1 - - [20/Sep/2023 13:52:29] "GET / HTTP/1.1" 200 -
+2023-09-20 13:52:29,691 INFO: 127.0.0.1 - - [20/Sep/2023 13:52:29] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:52:29,692 INFO: 127.0.0.1 - - [20/Sep/2023 13:52:29] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 13:53:12,985 INFO: 127.0.0.1 - - [20/Sep/2023 13:53:12] "GET / HTTP/1.1" 200 -
+2023-09-20 13:53:13,006 INFO: 127.0.0.1 - - [20/Sep/2023 13:53:13] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:53:13,006 INFO: 127.0.0.1 - - [20/Sep/2023 13:53:13] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 13:58:50,228 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:50] "GET / HTTP/1.1" 200 -
+2023-09-20 13:58:50,249 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:50] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 13:58:50,250 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:50] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 13:58:56,705 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:56] "GET / HTTP/1.1" 200 -
+2023-09-20 13:58:56,728 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:56] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:58:56,729 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:56] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:58:57,939 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:57] "GET / HTTP/1.1" 200 -
+2023-09-20 13:58:57,955 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:57] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:58:57,957 INFO: 127.0.0.1 - - [20/Sep/2023 13:58:57] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:59:21,555 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:21] "GET / HTTP/1.1" 200 -
+2023-09-20 13:59:21,570 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:21] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:59:21,571 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:21] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 13:59:23,128 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:23] "GET / HTTP/1.1" 200 -
+2023-09-20 13:59:23,144 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:23] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:59:23,145 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:23] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:59:23,859 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:23] "GET / HTTP/1.1" 200 -
+2023-09-20 13:59:23,876 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:23] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 13:59:23,876 INFO: 127.0.0.1 - - [20/Sep/2023 13:59:23] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:00:14,664 INFO: 127.0.0.1 - - [20/Sep/2023 14:00:14] "GET / HTTP/1.1" 200 -
+2023-09-20 14:00:14,680 INFO: 127.0.0.1 - - [20/Sep/2023 14:00:14] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:00:14,682 INFO: 127.0.0.1 - - [20/Sep/2023 14:00:14] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:03:15,109 INFO: 127.0.0.1 - - [20/Sep/2023 14:03:15] "GET / HTTP/1.1" 200 -
+2023-09-20 14:03:15,129 INFO: 127.0.0.1 - - [20/Sep/2023 14:03:15] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:03:15,130 INFO: 127.0.0.1 - - [20/Sep/2023 14:03:15] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:03:32,541 INFO: 127.0.0.1 - - [20/Sep/2023 14:03:32] "GET / HTTP/1.1" 200 -
+2023-09-20 14:03:32,557 INFO: 127.0.0.1 - - [20/Sep/2023 14:03:32] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:03:32,557 INFO: 127.0.0.1 - - [20/Sep/2023 14:03:32] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:04:03,162 INFO: 127.0.0.1 - - [20/Sep/2023 14:04:03] "GET / HTTP/1.1" 200 -
+2023-09-20 14:04:03,178 INFO: 127.0.0.1 - - [20/Sep/2023 14:04:03] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:04:03,179 INFO: 127.0.0.1 - - [20/Sep/2023 14:04:03] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:04:07,866 DEBUG: Code execution started
+2023-09-20 14:04:07,872 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:04:07,872 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:04:27,892 INFO: 127.0.0.1 - - [20/Sep/2023 14:04:27] "GET / HTTP/1.1" 200 -
+2023-09-20 14:04:27,951 INFO: 127.0.0.1 - - [20/Sep/2023 14:04:27] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:04:27,951 INFO: 127.0.0.1 - - [20/Sep/2023 14:04:27] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:05:28,418 INFO: 127.0.0.1 - - [20/Sep/2023 14:05:28] "GET / HTTP/1.1" 200 -
+2023-09-20 14:05:28,434 INFO: 127.0.0.1 - - [20/Sep/2023 14:05:28] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:05:28,437 INFO: 127.0.0.1 - - [20/Sep/2023 14:05:28] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:06:28,353 INFO: 127.0.0.1 - - [20/Sep/2023 14:06:28] "GET / HTTP/1.1" 200 -
+2023-09-20 14:06:28,374 INFO: 127.0.0.1 - - [20/Sep/2023 14:06:28] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:06:28,374 INFO: 127.0.0.1 - - [20/Sep/2023 14:06:28] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:07:07,443 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:07] "GET / HTTP/1.1" 200 -
+2023-09-20 14:07:07,457 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:07] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:07:07,458 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:07] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:07:22,868 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:22] "GET / HTTP/1.1" 200 -
+2023-09-20 14:07:22,887 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:22] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:07:22,888 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:22] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:07:26,916 INFO: 127.0.0.1 - - [20/Sep/2023 14:07:26] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:09:57,429 DEBUG: Code execution started
+2023-09-20 14:09:57,436 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:09:57,436 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:10:22,968 INFO: 127.0.0.1 - - [20/Sep/2023 14:10:22] "GET / HTTP/1.1" 200 -
+2023-09-20 14:10:23,034 INFO: 127.0.0.1 - - [20/Sep/2023 14:10:23] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:10:23,036 INFO: 127.0.0.1 - - [20/Sep/2023 14:10:23] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:11:00,821 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:00] "GET / HTTP/1.1" 200 -
+2023-09-20 14:11:00,842 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:00] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:11:00,843 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:00] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:11:02,628 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:02] "GET / HTTP/1.1" 200 -
+2023-09-20 14:11:02,644 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:02] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:11:02,646 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:02] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:11:06,830 INFO: 127.0.0.1 - - [20/Sep/2023 14:11:06] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:11:11,714 DEBUG: Code execution started
+2023-09-20 14:11:11,720 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:11:11,720 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:14:18,513 DEBUG: Code execution started
+2023-09-20 14:14:18,519 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:14:18,519 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:14:57,627 INFO: 127.0.0.1 - - [20/Sep/2023 14:14:57] "GET / HTTP/1.1" 200 -
+2023-09-20 14:14:57,687 INFO: 127.0.0.1 - - [20/Sep/2023 14:14:57] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:14:57,688 INFO: 127.0.0.1 - - [20/Sep/2023 14:14:57] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:15:55,492 INFO: 127.0.0.1 - - [20/Sep/2023 14:15:55] "GET / HTTP/1.1" 200 -
+2023-09-20 14:15:55,514 INFO: 127.0.0.1 - - [20/Sep/2023 14:15:55] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:15:55,515 INFO: 127.0.0.1 - - [20/Sep/2023 14:15:55] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:21:20,449 INFO: 127.0.0.1 - - [20/Sep/2023 14:21:20] "GET / HTTP/1.1" 200 -
+2023-09-20 14:21:20,464 INFO: 127.0.0.1 - - [20/Sep/2023 14:21:20] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:21:20,465 INFO: 127.0.0.1 - - [20/Sep/2023 14:21:20] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:21:30,532 DEBUG: Code execution started
+2023-09-20 14:21:30,541 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:21:30,541 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:21:54,473 INFO: 127.0.0.1 - - [20/Sep/2023 14:21:54] "GET / HTTP/1.1" 200 -
+2023-09-20 14:21:54,538 INFO: 127.0.0.1 - - [20/Sep/2023 14:21:54] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:21:54,539 INFO: 127.0.0.1 - - [20/Sep/2023 14:21:54] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:36:32,417 INFO: 127.0.0.1 - - [20/Sep/2023 14:36:32] "GET / HTTP/1.1" 200 -
+2023-09-20 14:36:32,429 INFO: 127.0.0.1 - - [20/Sep/2023 14:36:32] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:36:32,430 INFO: 127.0.0.1 - - [20/Sep/2023 14:36:32] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:37:40,921 INFO: 127.0.0.1 - - [20/Sep/2023 14:37:40] "GET / HTTP/1.1" 200 -
+2023-09-20 14:37:40,938 INFO: 127.0.0.1 - - [20/Sep/2023 14:37:40] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:37:40,938 INFO: 127.0.0.1 - - [20/Sep/2023 14:37:40] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:37:44,684 INFO: 127.0.0.1 - - [20/Sep/2023 14:37:44] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:39:09,338 INFO: 127.0.0.1 - - [20/Sep/2023 14:39:09] "GET / HTTP/1.1" 200 -
+2023-09-20 14:39:09,356 INFO: 127.0.0.1 - - [20/Sep/2023 14:39:09] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:39:09,357 INFO: 127.0.0.1 - - [20/Sep/2023 14:39:09] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:39:58,429 INFO: 127.0.0.1 - - [20/Sep/2023 14:39:58] "GET / HTTP/1.1" 200 -
+2023-09-20 14:39:58,447 INFO: 127.0.0.1 - - [20/Sep/2023 14:39:58] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:39:58,448 INFO: 127.0.0.1 - - [20/Sep/2023 14:39:58] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:40:57,447 INFO: 127.0.0.1 - - [20/Sep/2023 14:40:57] "GET / HTTP/1.1" 200 -
+2023-09-20 14:40:57,463 INFO: 127.0.0.1 - - [20/Sep/2023 14:40:57] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:40:57,464 INFO: 127.0.0.1 - - [20/Sep/2023 14:40:57] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:41:26,605 INFO: 127.0.0.1 - - [20/Sep/2023 14:41:26] "GET / HTTP/1.1" 200 -
+2023-09-20 14:41:26,623 INFO: 127.0.0.1 - - [20/Sep/2023 14:41:26] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:41:26,624 INFO: 127.0.0.1 - - [20/Sep/2023 14:41:26] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:41:41,923 INFO: 127.0.0.1 - - [20/Sep/2023 14:41:41] "GET / HTTP/1.1" 200 -
+2023-09-20 14:41:41,939 INFO: 127.0.0.1 - - [20/Sep/2023 14:41:41] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:41:41,939 INFO: 127.0.0.1 - - [20/Sep/2023 14:41:41] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 14:44:01,638 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:01] "GET / HTTP/1.1" 200 -
+2023-09-20 14:44:01,653 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:01] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:44:01,655 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:01] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:44:16,899 DEBUG: Code execution started
+2023-09-20 14:44:16,905 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:44:16,905 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:44:19,387 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:19] "GET / HTTP/1.1" 200 -
+2023-09-20 14:44:19,451 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:19] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:44:19,453 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:19] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:44:40,718 DEBUG: Code execution started
+2023-09-20 14:44:40,724 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:44:40,724 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:44:43,436 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:43] "GET / HTTP/1.1" 200 -
+2023-09-20 14:44:43,496 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:43] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:44:43,498 INFO: 127.0.0.1 - - [20/Sep/2023 14:44:43] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:45:16,501 DEBUG: Code execution started
+2023-09-20 14:45:16,508 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:45:16,508 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:45:19,025 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:19] "GET / HTTP/1.1" 200 -
+2023-09-20 14:45:19,084 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:19] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:45:19,085 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:19] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:45:41,477 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:41] "GET / HTTP/1.1" 200 -
+2023-09-20 14:45:41,493 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:41] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:45:41,493 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:41] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:45:49,430 INFO: start executing python code
+2023-09-20 14:45:49,430 DEBUG: Python code executed, output: 
+2023-09-20 14:45:49,430 INFO: 127.0.0.1 - - [20/Sep/2023 14:45:49] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 14:46:19,389 INFO: 127.0.0.1 - - [20/Sep/2023 14:46:19] "GET / HTTP/1.1" 200 -
+2023-09-20 14:46:19,411 INFO: 127.0.0.1 - - [20/Sep/2023 14:46:19] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:46:19,414 INFO: 127.0.0.1 - - [20/Sep/2023 14:46:19] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:46:23,809 DEBUG: Code execution started
+2023-09-20 14:46:23,816 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 14:46:23,816 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 14:46:25,347 INFO: 127.0.0.1 - - [20/Sep/2023 14:46:25] "GET / HTTP/1.1" 200 -
+2023-09-20 14:46:25,404 INFO: 127.0.0.1 - - [20/Sep/2023 14:46:25] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:46:25,404 INFO: 127.0.0.1 - - [20/Sep/2023 14:46:25] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:47:40,216 INFO: 127.0.0.1 - - [20/Sep/2023 14:47:40] "GET / HTTP/1.1" 200 -
+2023-09-20 14:47:40,233 INFO: 127.0.0.1 - - [20/Sep/2023 14:47:40] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:47:40,234 INFO: 127.0.0.1 - - [20/Sep/2023 14:47:40] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:48:15,808 INFO: 127.0.0.1 - - [20/Sep/2023 14:48:15] "GET / HTTP/1.1" 200 -
+2023-09-20 14:48:15,830 INFO: 127.0.0.1 - - [20/Sep/2023 14:48:15] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:48:15,831 INFO: 127.0.0.1 - - [20/Sep/2023 14:48:15] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:49:27,499 INFO: 127.0.0.1 - - [20/Sep/2023 14:49:27] "GET / HTTP/1.1" 200 -
+2023-09-20 14:49:27,517 INFO: 127.0.0.1 - - [20/Sep/2023 14:49:27] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:49:27,518 INFO: 127.0.0.1 - - [20/Sep/2023 14:49:27] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:50:10,919 INFO: 127.0.0.1 - - [20/Sep/2023 14:50:10] "GET / HTTP/1.1" 200 -
+2023-09-20 14:50:10,942 INFO: 127.0.0.1 - - [20/Sep/2023 14:50:10] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:50:10,943 INFO: 127.0.0.1 - - [20/Sep/2023 14:50:10] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:50:32,939 INFO: 127.0.0.1 - - [20/Sep/2023 14:50:32] "GET / HTTP/1.1" 200 -
+2023-09-20 14:50:32,955 INFO: 127.0.0.1 - - [20/Sep/2023 14:50:32] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:50:32,956 INFO: 127.0.0.1 - - [20/Sep/2023 14:50:32] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:51:23,925 INFO: 127.0.0.1 - - [20/Sep/2023 14:51:23] "GET / HTTP/1.1" 200 -
+2023-09-20 14:51:23,944 INFO: 127.0.0.1 - - [20/Sep/2023 14:51:23] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:51:23,945 INFO: 127.0.0.1 - - [20/Sep/2023 14:51:23] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:53:31,309 INFO: 127.0.0.1 - - [20/Sep/2023 14:53:31] "GET / HTTP/1.1" 200 -
+2023-09-20 14:53:31,331 INFO: 127.0.0.1 - - [20/Sep/2023 14:53:31] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:53:31,331 INFO: 127.0.0.1 - - [20/Sep/2023 14:53:31] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:54:28,468 INFO: 127.0.0.1 - - [20/Sep/2023 14:54:28] "GET / HTTP/1.1" 200 -
+2023-09-20 14:54:28,483 INFO: 127.0.0.1 - - [20/Sep/2023 14:54:28] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:54:28,484 INFO: 127.0.0.1 - - [20/Sep/2023 14:54:28] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:55:27,146 INFO: 127.0.0.1 - - [20/Sep/2023 14:55:27] "GET / HTTP/1.1" 200 -
+2023-09-20 14:55:27,162 INFO: 127.0.0.1 - - [20/Sep/2023 14:55:27] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:55:27,162 INFO: 127.0.0.1 - - [20/Sep/2023 14:55:27] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:55:40,978 INFO: 127.0.0.1 - - [20/Sep/2023 14:55:40] "GET / HTTP/1.1" 200 -
+2023-09-20 14:55:40,994 INFO: 127.0.0.1 - - [20/Sep/2023 14:55:40] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:55:40,995 INFO: 127.0.0.1 - - [20/Sep/2023 14:55:40] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:56:01,298 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:01] "GET / HTTP/1.1" 200 -
+2023-09-20 14:56:01,318 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:01] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:56:01,318 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:01] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:56:17,432 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:17] "GET / HTTP/1.1" 200 -
+2023-09-20 14:56:17,448 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:17] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:56:17,448 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:17] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:56:27,856 INFO: 127.0.0.1 - - [20/Sep/2023 14:56:27] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:58:56,286 INFO: 127.0.0.1 - - [20/Sep/2023 14:58:56] "GET / HTTP/1.1" 200 -
+2023-09-20 14:58:56,309 INFO: 127.0.0.1 - - [20/Sep/2023 14:58:56] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:58:56,312 INFO: 127.0.0.1 - - [20/Sep/2023 14:58:56] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 14:59:28,362 INFO: 127.0.0.1 - - [20/Sep/2023 14:59:28] "GET / HTTP/1.1" 200 -
+2023-09-20 14:59:28,378 INFO: 127.0.0.1 - - [20/Sep/2023 14:59:28] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 14:59:28,379 INFO: 127.0.0.1 - - [20/Sep/2023 14:59:28] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:01:23,672 INFO: 127.0.0.1 - - [20/Sep/2023 15:01:23] "GET / HTTP/1.1" 200 -
+2023-09-20 15:01:23,684 INFO: 127.0.0.1 - - [20/Sep/2023 15:01:23] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:01:23,685 INFO: 127.0.0.1 - - [20/Sep/2023 15:01:23] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:03:57,376 INFO: 127.0.0.1 - - [20/Sep/2023 15:03:57] "GET / HTTP/1.1" 200 -
+2023-09-20 15:03:57,394 INFO: 127.0.0.1 - - [20/Sep/2023 15:03:57] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:03:57,395 INFO: 127.0.0.1 - - [20/Sep/2023 15:03:57] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:04:24,146 INFO: 127.0.0.1 - - [20/Sep/2023 15:04:24] "GET / HTTP/1.1" 200 -
+2023-09-20 15:04:24,172 INFO: 127.0.0.1 - - [20/Sep/2023 15:04:24] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:04:24,173 INFO: 127.0.0.1 - - [20/Sep/2023 15:04:24] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:04:53,935 INFO: 127.0.0.1 - - [20/Sep/2023 15:04:53] "GET / HTTP/1.1" 200 -
+2023-09-20 15:04:53,948 INFO: 127.0.0.1 - - [20/Sep/2023 15:04:53] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:04:53,949 INFO: 127.0.0.1 - - [20/Sep/2023 15:04:53] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:07:20,226 INFO: 127.0.0.1 - - [20/Sep/2023 15:07:20] "GET / HTTP/1.1" 200 -
+2023-09-20 15:07:20,245 INFO: 127.0.0.1 - - [20/Sep/2023 15:07:20] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:07:20,245 INFO: 127.0.0.1 - - [20/Sep/2023 15:07:20] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:09:48,490 INFO: 127.0.0.1 - - [20/Sep/2023 15:09:48] "GET / HTTP/1.1" 200 -
+2023-09-20 15:09:48,526 INFO: 127.0.0.1 - - [20/Sep/2023 15:09:48] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:09:48,528 INFO: 127.0.0.1 - - [20/Sep/2023 15:09:48] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:11:26,510 DEBUG: Code execution started
+2023-09-20 15:11:26,517 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 15:11:26,517 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 15:11:29,359 INFO: 127.0.0.1 - - [20/Sep/2023 15:11:29] "GET / HTTP/1.1" 200 -
+2023-09-20 15:11:29,423 INFO: 127.0.0.1 - - [20/Sep/2023 15:11:29] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:11:29,424 INFO: 127.0.0.1 - - [20/Sep/2023 15:11:29] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:12:05,949 INFO: 127.0.0.1 - - [20/Sep/2023 15:12:05] "GET / HTTP/1.1" 200 -
+2023-09-20 15:12:05,965 INFO: 127.0.0.1 - - [20/Sep/2023 15:12:05] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:12:05,966 INFO: 127.0.0.1 - - [20/Sep/2023 15:12:05] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:12:46,487 INFO: 127.0.0.1 - - [20/Sep/2023 15:12:46] "GET / HTTP/1.1" 200 -
+2023-09-20 15:12:46,505 INFO: 127.0.0.1 - - [20/Sep/2023 15:12:46] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:12:46,506 INFO: 127.0.0.1 - - [20/Sep/2023 15:12:46] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:14:27,630 DEBUG: Code execution started
+2023-09-20 15:14:27,640 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 15:14:27,640 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 15:14:31,850 INFO: 127.0.0.1 - - [20/Sep/2023 15:14:31] "GET / HTTP/1.1" 200 -
+2023-09-20 15:14:31,928 INFO: 127.0.0.1 - - [20/Sep/2023 15:14:31] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:14:31,929 INFO: 127.0.0.1 - - [20/Sep/2023 15:14:31] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:15:12,116 DEBUG: Code execution started
+2023-09-20 15:15:12,124 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 15:15:12,124 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 15:15:14,795 INFO: 127.0.0.1 - - [20/Sep/2023 15:15:14] "GET / HTTP/1.1" 200 -
+2023-09-20 15:15:14,856 INFO: 127.0.0.1 - - [20/Sep/2023 15:15:14] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:15:14,857 INFO: 127.0.0.1 - - [20/Sep/2023 15:15:14] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:16:13,781 INFO: 127.0.0.1 - - [20/Sep/2023 15:16:13] "GET / HTTP/1.1" 200 -
+2023-09-20 15:16:13,804 INFO: 127.0.0.1 - - [20/Sep/2023 15:16:13] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:16:13,808 INFO: 127.0.0.1 - - [20/Sep/2023 15:16:13] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:17:30,175 INFO: 127.0.0.1 - - [20/Sep/2023 15:17:30] "GET / HTTP/1.1" 200 -
+2023-09-20 15:17:30,203 INFO: 127.0.0.1 - - [20/Sep/2023 15:17:30] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:17:30,204 INFO: 127.0.0.1 - - [20/Sep/2023 15:17:30] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:18:09,125 INFO: 127.0.0.1 - - [20/Sep/2023 15:18:09] "GET / HTTP/1.1" 200 -
+2023-09-20 15:18:09,144 INFO: 127.0.0.1 - - [20/Sep/2023 15:18:09] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:18:09,144 INFO: 127.0.0.1 - - [20/Sep/2023 15:18:09] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:21:11,994 INFO: 127.0.0.1 - - [20/Sep/2023 15:21:11] "GET / HTTP/1.1" 200 -
+2023-09-20 15:21:12,013 INFO: 127.0.0.1 - - [20/Sep/2023 15:21:12] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:21:12,013 INFO: 127.0.0.1 - - [20/Sep/2023 15:21:12] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:21:36,438 INFO: start executing python code
+2023-09-20 15:21:36,438 DEBUG: Python code executed, output: hello
+2023-09-20 15:21:36,439 INFO: 127.0.0.1 - - [20/Sep/2023 15:21:36] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 15:22:04,714 INFO: start executing python code
+2023-09-20 15:22:04,714 INFO: 127.0.0.1 - - [20/Sep/2023 15:22:04] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 15:22:24,426 INFO: 127.0.0.1 - - [20/Sep/2023 15:22:24] "GET / HTTP/1.1" 200 -
+2023-09-20 15:22:24,442 INFO: 127.0.0.1 - - [20/Sep/2023 15:22:24] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:22:24,444 INFO: 127.0.0.1 - - [20/Sep/2023 15:22:24] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:26:31,148 DEBUG: Code execution started
+2023-09-20 15:26:31,155 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 15:26:31,155 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 15:27:00,547 INFO: 127.0.0.1 - - [20/Sep/2023 15:27:00] "GET / HTTP/1.1" 200 -
+2023-09-20 15:27:00,609 INFO: 127.0.0.1 - - [20/Sep/2023 15:27:00] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:27:00,609 INFO: 127.0.0.1 - - [20/Sep/2023 15:27:00] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:27:39,722 INFO: 127.0.0.1 - - [20/Sep/2023 15:27:39] "GET / HTTP/1.1" 200 -
+2023-09-20 15:27:39,747 INFO: 127.0.0.1 - - [20/Sep/2023 15:27:39] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:27:39,748 INFO: 127.0.0.1 - - [20/Sep/2023 15:27:39] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:29:25,748 INFO: 127.0.0.1 - - [20/Sep/2023 15:29:25] "GET / HTTP/1.1" 200 -
+2023-09-20 15:29:25,766 INFO: 127.0.0.1 - - [20/Sep/2023 15:29:25] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:29:25,767 INFO: 127.0.0.1 - - [20/Sep/2023 15:29:25] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:30:04,910 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:04] "GET / HTTP/1.1" 200 -
+2023-09-20 15:30:04,932 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:04] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:30:04,932 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:04] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:30:25,609 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:25] "GET / HTTP/1.1" 200 -
+2023-09-20 15:30:25,629 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:25] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:30:25,629 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:25] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 15:30:27,293 INFO: start executing python code
+2023-09-20 15:30:27,294 DEBUG: Python code executed, output: Hello,world!
+2023-09-20 15:30:27,294 INFO: 127.0.0.1 - - [20/Sep/2023 15:30:27] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 15:32:23,059 INFO: 127.0.0.1 - - [20/Sep/2023 15:32:23] "GET / HTTP/1.1" 200 -
+2023-09-20 15:32:23,079 INFO: 127.0.0.1 - - [20/Sep/2023 15:32:23] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:32:23,079 INFO: 127.0.0.1 - - [20/Sep/2023 15:32:23] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:33:20,618 DEBUG: Code execution started
+2023-09-20 15:33:20,625 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 15:33:20,625 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 15:33:22,558 INFO: 127.0.0.1 - - [20/Sep/2023 15:33:22] "GET / HTTP/1.1" 200 -
+2023-09-20 15:33:22,626 INFO: 127.0.0.1 - - [20/Sep/2023 15:33:22] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:33:22,630 INFO: 127.0.0.1 - - [20/Sep/2023 15:33:22] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:43:35,110 INFO: 127.0.0.1 - - [20/Sep/2023 15:43:35] "GET / HTTP/1.1" 200 -
+2023-09-20 15:43:35,139 INFO: 127.0.0.1 - - [20/Sep/2023 15:43:35] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:43:35,140 INFO: 127.0.0.1 - - [20/Sep/2023 15:43:35] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:44:05,976 INFO: 127.0.0.1 - - [20/Sep/2023 15:44:05] "GET / HTTP/1.1" 200 -
+2023-09-20 15:44:05,996 INFO: 127.0.0.1 - - [20/Sep/2023 15:44:05] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:44:05,997 INFO: 127.0.0.1 - - [20/Sep/2023 15:44:05] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:44:54,128 INFO: 127.0.0.1 - - [20/Sep/2023 15:44:54] "GET / HTTP/1.1" 200 -
+2023-09-20 15:44:54,156 INFO: 127.0.0.1 - - [20/Sep/2023 15:44:54] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:44:54,156 INFO: 127.0.0.1 - - [20/Sep/2023 15:44:54] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:45:16,118 INFO: 127.0.0.1 - - [20/Sep/2023 15:45:16] "GET / HTTP/1.1" 200 -
+2023-09-20 15:45:16,135 INFO: 127.0.0.1 - - [20/Sep/2023 15:45:16] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:45:16,136 INFO: 127.0.0.1 - - [20/Sep/2023 15:45:16] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:45:54,586 INFO: 127.0.0.1 - - [20/Sep/2023 15:45:54] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:47:35,509 INFO: 127.0.0.1 - - [20/Sep/2023 15:47:35] "GET / HTTP/1.1" 200 -
+2023-09-20 15:47:35,530 INFO: 127.0.0.1 - - [20/Sep/2023 15:47:35] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:47:35,530 INFO: 127.0.0.1 - - [20/Sep/2023 15:47:35] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:47:53,315 DEBUG: Code execution started
+2023-09-20 15:47:53,322 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 15:47:53,322 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 15:47:55,441 INFO: 127.0.0.1 - - [20/Sep/2023 15:47:55] "GET / HTTP/1.1" 200 -
+2023-09-20 15:47:55,498 INFO: 127.0.0.1 - - [20/Sep/2023 15:47:55] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:47:55,499 INFO: 127.0.0.1 - - [20/Sep/2023 15:47:55] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:48:01,366 INFO: start executing python code
+2023-09-20 15:48:01,366 DEBUG: Python code executed, output: Hello,world!
+2023-09-20 15:48:01,367 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:01] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 15:48:42,147 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:42] "GET / HTTP/1.1" 200 -
+2023-09-20 15:48:42,167 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:42] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:48:42,170 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:42] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:48:52,126 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:52] "GET / HTTP/1.1" 200 -
+2023-09-20 15:48:52,139 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:52] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:48:52,139 INFO: 127.0.0.1 - - [20/Sep/2023 15:48:52] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:49:47,433 INFO: 127.0.0.1 - - [20/Sep/2023 15:49:47] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:49:55,095 INFO: 127.0.0.1 - - [20/Sep/2023 15:49:55] "GET / HTTP/1.1" 200 -
+2023-09-20 15:49:55,107 INFO: 127.0.0.1 - - [20/Sep/2023 15:49:55] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:49:55,107 INFO: 127.0.0.1 - - [20/Sep/2023 15:49:55] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:51:03,127 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:03] "GET / HTTP/1.1" 200 -
+2023-09-20 15:51:03,149 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:03] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:51:03,149 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:03] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:51:15,414 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:15] "GET / HTTP/1.1" 200 -
+2023-09-20 15:51:15,428 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:15] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:51:15,428 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:15] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:51:23,626 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:23] "GET / HTTP/1.1" 200 -
+2023-09-20 15:51:23,638 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:23] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:51:23,638 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:23] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:51:26,216 INFO: 127.0.0.1 - - [20/Sep/2023 15:51:26] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 15:59:52,846 INFO: 127.0.0.1 - - [20/Sep/2023 15:59:52] "GET / HTTP/1.1" 200 -
+2023-09-20 15:59:52,871 INFO: 127.0.0.1 - - [20/Sep/2023 15:59:52] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 15:59:52,879 INFO: 127.0.0.1 - - [20/Sep/2023 15:59:52] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:00:24,898 INFO: 127.0.0.1 - - [20/Sep/2023 16:00:24] "GET / HTTP/1.1" 200 -
+2023-09-20 16:00:24,916 INFO: 127.0.0.1 - - [20/Sep/2023 16:00:24] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:00:24,916 INFO: 127.0.0.1 - - [20/Sep/2023 16:00:24] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:00:50,264 DEBUG: Code execution started
+2023-09-20 16:00:50,270 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 16:00:50,270 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 16:00:54,467 INFO: 127.0.0.1 - - [20/Sep/2023 16:00:54] "GET / HTTP/1.1" 200 -
+2023-09-20 16:00:54,528 INFO: 127.0.0.1 - - [20/Sep/2023 16:00:54] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:00:54,529 INFO: 127.0.0.1 - - [20/Sep/2023 16:00:54] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:01:01,336 INFO: 127.0.0.1 - - [20/Sep/2023 16:01:01] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:05:06,628 INFO: 127.0.0.1 - - [20/Sep/2023 16:05:06] "GET / HTTP/1.1" 200 -
+2023-09-20 16:05:06,647 INFO: 127.0.0.1 - - [20/Sep/2023 16:05:06] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:05:06,648 INFO: 127.0.0.1 - - [20/Sep/2023 16:05:06] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:16:44,104 INFO: start executing python code
+2023-09-20 16:16:44,104 DEBUG: Python code executed, output: hHelogdkgjgjfhgdgdgdgjdgjgk;djgkldjkgljklgkgkgd
+2023-09-20 16:16:44,105 INFO: 127.0.0.1 - - [20/Sep/2023 16:16:44] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:22:32,886 INFO: 127.0.0.1 - - [20/Sep/2023 16:22:32] "GET / HTTP/1.1" 200 -
+2023-09-20 16:22:32,904 INFO: 127.0.0.1 - - [20/Sep/2023 16:22:32] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:22:32,905 INFO: 127.0.0.1 - - [20/Sep/2023 16:22:32] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:24:57,866 INFO: start executing python code
+2023-09-20 16:24:57,866 DEBUG: Python code executed, output: Hello,world!
+2023-09-20 16:24:57,866 INFO: 127.0.0.1 - - [20/Sep/2023 16:24:57] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:25:02,692 INFO: 127.0.0.1 - - [20/Sep/2023 16:25:02] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:25:10,630 INFO: 127.0.0.1 - - [20/Sep/2023 16:25:10] "GET / HTTP/1.1" 200 -
+2023-09-20 16:25:10,648 INFO: 127.0.0.1 - - [20/Sep/2023 16:25:10] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:25:10,649 INFO: 127.0.0.1 - - [20/Sep/2023 16:25:10] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:27:10,576 INFO: start executing python code
+2023-09-20 16:27:10,576 DEBUG: Python code executed, output: Hello,world!
+2023-09-20 16:27:10,577 INFO: 127.0.0.1 - - [20/Sep/2023 16:27:10] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:27:11,211 INFO: start executing python code
+2023-09-20 16:27:11,211 DEBUG: Python code executed, output: Hello,world!
+2023-09-20 16:27:11,211 INFO: 127.0.0.1 - - [20/Sep/2023 16:27:11] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:27:16,257 INFO: start executing c or cpp code
+2023-09-20 16:27:16,258 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-20 16:27:16,260 INFO: 127.0.0.1 - - [20/Sep/2023 16:27:16] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:30:21,813 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:21] "GET / HTTP/1.1" 200 -
+2023-09-20 16:30:21,832 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:21] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:30:21,833 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:21] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 16:30:35,026 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:35] "GET / HTTP/1.1" 200 -
+2023-09-20 16:30:35,042 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:35] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:30:35,043 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:35] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 16:30:38,689 INFO: start executing c or cpp code
+2023-09-20 16:30:38,690 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-20 16:30:40,055 INFO: Code compiled with command: g++ builds/cpp/code.cpp -o builds/cpp/code
+2023-09-20 16:30:40,099 INFO: Code executed, stdout: hello,world!, stderr: None
+2023-09-20 16:30:40,099 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:40] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:30:50,923 INFO: start executing c# code
+2023-09-20 16:30:53,508 DEBUG: Code file created at builds/cs/Program.cs
+2023-09-20 16:30:56,190 INFO: 127.0.0.1 - - [20/Sep/2023 16:30:56] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:31:27,267 INFO: 127.0.0.1 - - [20/Sep/2023 16:31:27] "GET / HTTP/1.1" 200 -
+2023-09-20 16:31:27,287 INFO: 127.0.0.1 - - [20/Sep/2023 16:31:27] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:31:27,288 INFO: 127.0.0.1 - - [20/Sep/2023 16:31:27] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 16:31:30,272 INFO: start executing c# code
+2023-09-20 16:31:31,213 DEBUG: Code file created at builds/cs/Program.cs
+2023-09-20 16:31:33,347 INFO: Code compiled with command: dotnet build builds/cs
+2023-09-20 16:31:34,462 INFO: Code executed, stdout: Hello,world!, stderr: None
+2023-09-20 16:31:34,462 INFO: 127.0.0.1 - - [20/Sep/2023 16:31:34] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:33:24,407 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:24] "GET / HTTP/1.1" 200 -
+2023-09-20 16:33:24,425 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:24] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:33:24,426 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:24] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 16:33:26,990 INFO: start executing c or cpp code
+2023-09-20 16:33:26,991 DEBUG: Code file created at builds/c/code.c
+2023-09-20 16:33:27,165 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:27] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:33:41,434 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:41] "GET / HTTP/1.1" 200 -
+2023-09-20 16:33:41,449 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:41] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:33:41,451 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:41] "GET /static/js/script.js?v=2 HTTP/1.1" 200 -
+2023-09-20 16:33:46,967 INFO: start executing c or cpp code
+2023-09-20 16:33:46,968 DEBUG: Code file created at builds/c/code.c
+2023-09-20 16:33:47,127 INFO: Code compiled with command: gcc builds/c/code.c -o builds/c/code
+2023-09-20 16:33:47,161 INFO: Code executed, stdout: Hello world, stderr: None
+2023-09-20 16:33:47,161 INFO: 127.0.0.1 - - [20/Sep/2023 16:33:47] "POST /runcode HTTP/1.1" 200 -
+2023-09-20 16:34:08,454 INFO: 127.0.0.1 - - [20/Sep/2023 16:34:08] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:38:58,685 INFO: 127.0.0.1 - - [20/Sep/2023 16:38:58] "GET / HTTP/1.1" 200 -
+2023-09-20 16:38:58,703 INFO: 127.0.0.1 - - [20/Sep/2023 16:38:58] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:38:58,703 INFO: 127.0.0.1 - - [20/Sep/2023 16:38:58] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:40:25,307 INFO: 127.0.0.1 - - [20/Sep/2023 16:40:25] "GET / HTTP/1.1" 200 -
+2023-09-20 16:40:25,327 INFO: 127.0.0.1 - - [20/Sep/2023 16:40:25] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:40:25,328 INFO: 127.0.0.1 - - [20/Sep/2023 16:40:25] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:42:37,213 INFO: 127.0.0.1 - - [20/Sep/2023 16:42:37] "GET / HTTP/1.1" 200 -
+2023-09-20 16:42:37,230 INFO: 127.0.0.1 - - [20/Sep/2023 16:42:37] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:42:37,231 INFO: 127.0.0.1 - - [20/Sep/2023 16:42:37] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:45:37,358 INFO: 127.0.0.1 - - [20/Sep/2023 16:45:37] "GET / HTTP/1.1" 200 -
+2023-09-20 16:45:37,379 INFO: 127.0.0.1 - - [20/Sep/2023 16:45:37] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:45:37,379 INFO: 127.0.0.1 - - [20/Sep/2023 16:45:37] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:47:01,002 INFO: 127.0.0.1 - - [20/Sep/2023 16:47:01] "GET / HTTP/1.1" 200 -
+2023-09-20 16:47:01,019 INFO: 127.0.0.1 - - [20/Sep/2023 16:47:01] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:47:01,028 INFO: 127.0.0.1 - - [20/Sep/2023 16:47:01] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:48:31,841 INFO: 127.0.0.1 - - [20/Sep/2023 16:48:31] "GET / HTTP/1.1" 200 -
+2023-09-20 16:48:31,861 INFO: 127.0.0.1 - - [20/Sep/2023 16:48:31] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:48:31,869 INFO: 127.0.0.1 - - [20/Sep/2023 16:48:31] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:52:19,350 INFO: 127.0.0.1 - - [20/Sep/2023 16:52:19] "GET / HTTP/1.1" 200 -
+2023-09-20 16:52:19,371 INFO: 127.0.0.1 - - [20/Sep/2023 16:52:19] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:52:19,371 INFO: 127.0.0.1 - - [20/Sep/2023 16:52:19] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:53:09,122 INFO: 127.0.0.1 - - [20/Sep/2023 16:53:09] "GET / HTTP/1.1" 200 -
+2023-09-20 16:53:09,140 INFO: 127.0.0.1 - - [20/Sep/2023 16:53:09] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:53:09,140 INFO: 127.0.0.1 - - [20/Sep/2023 16:53:09] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:53:26,442 INFO: 127.0.0.1 - - [20/Sep/2023 16:53:26] "GET / HTTP/1.1" 200 -
+2023-09-20 16:53:26,455 INFO: 127.0.0.1 - - [20/Sep/2023 16:53:26] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:53:26,456 INFO: 127.0.0.1 - - [20/Sep/2023 16:53:26] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:54:22,727 INFO: 127.0.0.1 - - [20/Sep/2023 16:54:22] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:55:11,011 INFO: 127.0.0.1 - - [20/Sep/2023 16:55:11] "GET / HTTP/1.1" 200 -
+2023-09-20 16:55:11,036 INFO: 127.0.0.1 - - [20/Sep/2023 16:55:11] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:55:11,037 INFO: 127.0.0.1 - - [20/Sep/2023 16:55:11] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 16:55:25,057 INFO: 127.0.0.1 - - [20/Sep/2023 16:55:25] "GET / HTTP/1.1" 200 -
+2023-09-20 16:55:25,073 INFO: 127.0.0.1 - - [20/Sep/2023 16:55:25] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 16:55:25,074 INFO: 127.0.0.1 - - [20/Sep/2023 16:55:25] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:00:29,315 INFO: 127.0.0.1 - - [20/Sep/2023 17:00:29] "GET / HTTP/1.1" 200 -
+2023-09-20 17:00:29,336 INFO: 127.0.0.1 - - [20/Sep/2023 17:00:29] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:00:29,336 INFO: 127.0.0.1 - - [20/Sep/2023 17:00:29] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:00:36,252 INFO: 127.0.0.1 - - [20/Sep/2023 17:00:36] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:01:46,754 INFO: 127.0.0.1 - - [20/Sep/2023 17:01:46] "GET / HTTP/1.1" 200 -
+2023-09-20 17:01:46,773 INFO: 127.0.0.1 - - [20/Sep/2023 17:01:46] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:01:46,773 INFO: 127.0.0.1 - - [20/Sep/2023 17:01:46] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:05:27,467 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:27] "GET / HTTP/1.1" 200 -
+2023-09-20 17:05:27,488 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:27] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:05:27,489 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:27] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:05:48,759 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:48] "GET / HTTP/1.1" 200 -
+2023-09-20 17:05:48,772 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:48] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:05:48,773 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:48] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:05:50,892 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:50] "GET / HTTP/1.1" 200 -
+2023-09-20 17:05:50,905 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:50] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:05:50,906 INFO: 127.0.0.1 - - [20/Sep/2023 17:05:50] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:08,025 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:08] "GET / HTTP/1.1" 200 -
+2023-09-20 17:08:08,045 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:08] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:08:08,046 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:08] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:15,518 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:15] "GET / HTTP/1.1" 200 -
+2023-09-20 17:08:15,550 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:15] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:15,550 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:15] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:32,871 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:32] "GET / HTTP/1.1" 200 -
+2023-09-20 17:08:32,884 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:32] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:32,885 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:32] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:33,970 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:33] "GET / HTTP/1.1" 200 -
+2023-09-20 17:08:33,988 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:33] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:33,988 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:33] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:34,347 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:34] "GET / HTTP/1.1" 200 -
+2023-09-20 17:08:34,360 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:34] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:34,360 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:34] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:34,877 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:34] "GET / HTTP/1.1" 200 -
+2023-09-20 17:08:34,890 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:34] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:08:34,890 INFO: 127.0.0.1 - - [20/Sep/2023 17:08:34] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:06,432 DEBUG: Code execution started
+2023-09-20 17:09:06,439 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-20 17:09:06,439 INFO: [33mPress CTRL+C to quit[0m
+2023-09-20 17:09:07,840 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:07] "GET / HTTP/1.1" 200 -
+2023-09-20 17:09:07,932 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:07] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:07,932 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:07] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:09,233 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:09] "GET / HTTP/1.1" 200 -
+2023-09-20 17:09:09,257 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:09] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:09,258 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:09] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:09,657 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:09] "GET / HTTP/1.1" 200 -
+2023-09-20 17:09:09,672 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:09] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:09,672 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:09] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:14,035 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:14] "GET / HTTP/1.1" 200 -
+2023-09-20 17:09:14,051 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:14] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:14,051 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:14] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:09:55,980 INFO: 127.0.0.1 - - [20/Sep/2023 17:09:55] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:20:44,328 INFO: 127.0.0.1 - - [20/Sep/2023 17:20:44] "GET / HTTP/1.1" 200 -
+2023-09-20 17:20:44,360 INFO: 127.0.0.1 - - [20/Sep/2023 17:20:44] "[36mGET /static/css/style.css?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:20:44,361 INFO: 127.0.0.1 - - [20/Sep/2023 17:20:44] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:23:31,080 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:31] "GET / HTTP/1.1" 200 -
+2023-09-20 17:23:31,110 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:31] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:23:31,113 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:31] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:23:41,494 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:41] "GET / HTTP/1.1" 200 -
+2023-09-20 17:23:41,509 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:41] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:23:41,509 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:41] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:23:48,285 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:48] "GET / HTTP/1.1" 200 -
+2023-09-20 17:23:48,301 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:48] "GET /static/css/style.css?v=2 HTTP/1.1" 200 -
+2023-09-20 17:23:48,302 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:48] "[36mGET /static/js/script.js?v=2 HTTP/1.1[0m" 304 -
+2023-09-20 17:23:52,268 INFO: start executing python code
+2023-09-20 17:23:52,268 DEBUG: Python code executed, output: Hello,world!
+2023-09-20 17:23:52,268 INFO: 127.0.0.1 - - [20/Sep/2023 17:23:52] "POST /runcode HTTP/1.1" 200 -

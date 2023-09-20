@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const languageSelect = document.getElementById('language');
     const runButton = document.getElementById('run-button');
     const outputArea = document.getElementById('output');
-
+    textarea.value = "print('Hello,world!')";
     // Создайте объект для связи языков программирования с их модами
     const languageModes = {
         python: 'python',
@@ -66,16 +66,25 @@ window.addEventListener('DOMContentLoaded', function() {
             case "python":
                 codeEditor.setValue("print('Hello,world!')")
                 codeEditor.focus()
-                codeEditor.setCursor(1, 0)
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "python";
                 break;
             case "c":
+                codeEditor.setValue('#include <stdio.h>\n\nint main() {\n\nprintf("Hello world");\nreturn 0;\n}')
+                codeEditor.focus()
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "text/x-csrc";
                 break;
             case "cpp":
+                codeEditor.setValue('#include <iostream>\n\nint main(){\n   std::cout<<"hello,world!"<<std::endl;\n  return 0;\n}')
+                codeEditor.focus()
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "text/x-c++src";
                 break;
             case "cs":
+                codeEditor.setValue('Console.WriteLine("Hello,world!");')
+                codeEditor.focus()
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "text/x-csharp";
                 break;
             case "java":
@@ -84,27 +93,90 @@ window.addEventListener('DOMContentLoaded', function() {
             case "js":
                 codeEditor.setValue("console.log('Hello,world!')")
                 codeEditor.focus()
-                codeEditor.setCursor(1, 0)
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "javascript";
                 break;
             case "ruby":
                 codeEditor.setValue("puts 'hello, world!'")
                 codeEditor.focus()
-                codeEditor.setCursor(1, 0)
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "ruby";
                 break;
             case "go":
-                mode = "go";
-                codeEditor.focus()
                 codeEditor.setValue("package main")
-                codeEditor.setCursor(1, 0)
+                codeEditor.focus()
+                codeEditor.setCursor({line: 2, ch: 0})
+                mode = "go";
                 break;
             default:
                 codeEditor.setValue("print('Hello,world!')")
                 codeEditor.focus()
-                codeEditor.setCursor(1, 0)
+                codeEditor.setCursor({line: 2, ch: 0})
                 mode = "python";
         }
         codeEditor.setOption("mode", mode);
     });
+    document.getElementById('file-input').addEventListener('change', function (event) {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+           codeEditor.setValue(event.target.result);
+        }
+        reader.readAsText(event.target.files[0]);
+    }, false);
+    window.addEventListener('resize', function() {
+        if (window.innerWidth <= 600) {
+            document.querySelector('.io-container').style.flexDirection = 'column';
+        } else {
+        document.querySelector('.io-container').style.flexDirection = 'row';
+        }
+    });
+    var translateButton = document.getElementById("translate-button");
+    var translator = document.getElementById("translator");
+
+    translateButton.addEventListener("click", function() {
+      toggleTranslator();
+    });
+
+    function toggleTranslator() {
+      if (translator.style.display === "none") {
+        translator.style.display = "flex";
+      } else {
+        translator.style.display = "none";
+      }
+    }
+    var translator = document.getElementById("translator");
+    var textInput = document.getElementById("text-input");
+    var languageSelectTr = document.getElementById("language-select-tr");
+    var translateButton = document.getElementById("translate-button");
+    var translationOutput = document.getElementById("translation-output");
+
+    translateButton.addEventListener("click", function() {
+      var text = textInput.value;
+      var language = languageSelectTr.value;
+
+      if (text) {
+        translateText(text, language);
+      }
+    });
+
+    function translateText(text, language) {
+            const codeData = {
+            text: text,
+            language: language
+            };
+            fetch('/translate', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(codeData)
+            })
+            .then(response => response.json())
+            .then(result => {
+                translationOutput.innerText = data
+            })
+            .catch(error => {
+                translationOutput.innerText = 'Error: ' + error.message;
+            });
+    }
 });
