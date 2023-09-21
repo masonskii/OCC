@@ -16,6 +16,11 @@ body {
     /* Добавьте стили для вашего переводчика текста */
 }
 
+#translator {
+    display: none;
+    /* Добавьте стили для вашего переводчика текста */
+}
+
 .container {
     padding: 20px;
     /* width: 100%; */
@@ -32,9 +37,6 @@ h1 {
 
 .input-container {
     /* min-width: 50%; */
-    /* max-width: 52%; */
-    /* max-height: 40vw; */
-    /* min-height: 20vw; */
     position: relative;
     display: flex;
     width: 70%;
@@ -167,7 +169,6 @@ h1 {
     border: 1px solid #444444;
     border-radius: 15px;
     background-color: #2d2d2d;
-
 }
 
 textarea#text-input {

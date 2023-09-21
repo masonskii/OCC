@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "ufyZtxkNAJrrodT9+nN5owFfSh+omJdzJjPPP8DCw4dKzTXOPpYJFtpG9mMPL67TmIc9MeybRi7xO6J8/qXAZA==",
+  "dgSpecHash": "G3PMlxuCTnLd48fQ1GbnKHCLkz8eQqd/tnzsTuabAwZilVdbS964G7VNq4FiwmcqN6ENprieQ0SmRF4hrUFiTA==",
   "success": true,
   "projectFilePath": "e:\\VSCodeProject\\OPC\\builds\\cs\\cs.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Ошибка чтения файла кэша e:\\VSCodeProject\\OPC\\builds\\cs\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
