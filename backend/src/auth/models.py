@@ -3,9 +3,8 @@ from datetime import datetime
 
 from fastapi_users_db_sqlalchemy import SQLAlchemyBaseUserTable
 from sqlalchemy import Integer, Column, String, TIMESTAMP, ForeignKey, Boolean, MetaData, Table, JSON
-from sqlalchemy.orm import Mapped, mapped_column
 
-from src.database import Base
+from backend.src.database import Base
 
 metadata = MetaData()
 
@@ -36,23 +35,23 @@ user = Table(
 
 class User(SQLAlchemyBaseUserTable[int], Base):
     __tablename__ = 'user'
-    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True, nullable=False)
-    name: Mapped[str] = mapped_column(String(length=50), nullable=False)
-    username: Mapped[str] = mapped_column(String(length=30), nullable=False)
-    registered_at: Mapped[TIMESTAMP] = mapped_column(TIMESTAMP, default=datetime.utcnow)
-    storage: Mapped[str] = mapped_column(String)
-    role_id: Mapped[int] = mapped_column(Integer, ForeignKey(role.c.id))
-    email: Mapped[str] = mapped_column(
+    id: int = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
+    name: str = Column(String(length=50), nullable=False)
+    username: str = Column(String(length=30), nullable=False)
+    registered_at: TIMESTAMP = Column(TIMESTAMP, default=datetime.utcnow)
+    storage: str = Column(String)
+    role_id: int = Column(Integer, ForeignKey(role.c.id))
+    email: str = Column(
         String(length=320), unique=True, index=True, nullable=False
     )
-    hashed_password: Mapped[str] = mapped_column(
+    hashed_password: str = Column(
         String(length=1024), nullable=False
     )
-    is_active: Mapped[bool] = mapped_column(Boolean, default=True, nullable=False)
-    is_superuser: Mapped[bool] = mapped_column(
+    is_active: bool = Column(Boolean, default=True, nullable=False)
+    is_superuser: bool = Column(
         Boolean, default=False, nullable=False
     )
-    is_verified: Mapped[bool] = mapped_column(
+    is_verified: bool = Column(
         Boolean, default=False, nullable=False
     )
 

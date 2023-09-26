@@ -7,3 +7,325 @@
 2023-09-26 21:00:15,084 INFO: {'output': '23', 'error': None}
 2023-09-26 21:04:43,776 DEBUG: Using proactor: IocpProactor
 2023-09-26 21:08:03,177 DEBUG: Using proactor: IocpProactor
+2023-09-26 21:35:50,334 DEBUG: Using proactor: IocpProactor
+2023-09-26 21:36:01,477 DEBUG: registered 'bcrypt' handler: <class 'passlib.handlers.bcrypt.bcrypt'>
+2023-09-26 21:36:01,564 DEBUG: detected 'bcrypt' backend, version '4.0.1'
+2023-09-26 21:36:01,564 DEBUG: 'bcrypt' backend lacks $2$ support, enabling workaround
+2023-09-26 21:36:24,976 INFO: python
+2023-09-26 21:36:24,976 INFO: {'language': 'python', 'code': 'print(23)'}
+2023-09-26 21:36:24,976 INFO: Start executing python code
+2023-09-26 21:36:24,976 INFO: start executing python code
+2023-09-26 21:36:24,976 DEBUG: Python code executed, output: 23
+2023-09-26 21:36:24,976 INFO: {'output': '23', 'error': None}
+2023-09-26 21:40:41,132 DEBUG: Using proactor: IocpProactor
+2023-09-26 21:41:09,359 INFO: python
+2023-09-26 21:41:09,359 INFO: {'language': 'python', 'code': 'print(23)'}
+2023-09-26 21:41:09,359 INFO: Start executing python code
+2023-09-26 21:41:09,359 INFO: start executing python code
+2023-09-26 21:41:09,360 DEBUG: Python code executed, output: 23
+2023-09-26 21:41:09,360 INFO: {'output': '23', 'error': None}
+2023-09-26 21:42:45,865 DEBUG: Using proactor: IocpProactor
+2023-09-26 21:43:19,930 INFO: python
+2023-09-26 21:43:27,521 INFO: {'language': 'python', 'code': 'print(23)'}
+2023-09-26 21:43:27,521 INFO: Start executing python code
+2023-09-26 21:43:35,722 INFO: start executing python code
+2023-09-26 21:43:38,360 DEBUG: Python code executed, output: 23
+2023-09-26 21:43:50,925 INFO: {'output': '23', 'error': None}
+2023-09-26 21:44:36,913 DEBUG: Using proactor: IocpProactor
+2023-09-26 21:45:04,533 INFO: python
+2023-09-26 21:45:04,533 INFO: {'language': 'python', 'code': 'print(23)'}
+2023-09-26 21:45:04,533 INFO: Start executing python code
+2023-09-26 21:45:04,533 INFO: start executing python code
+2023-09-26 21:45:04,533 DEBUG: Python code executed, output: 23
+2023-09-26 21:45:04,533 INFO: {'output': '23', 'error': None}
+2023-09-26 22:10:33,971 INFO: python
+2023-09-26 22:10:33,971 INFO: {'code': "print('Hello,world!')", 'language': 'python'}
+2023-09-26 22:10:33,971 INFO: Start executing python code
+2023-09-26 22:10:33,971 INFO: start executing python code
+2023-09-26 22:10:33,971 DEBUG: Python code executed, output: Hello,world!
+2023-09-26 22:10:33,971 INFO: {'output': 'Hello,world!', 'error': None}
+2023-09-26 22:10:45,865 INFO: python
+2023-09-26 22:10:45,865 INFO: {'code': "print('Hello,gfdhfghfh!')", 'language': 'python'}
+2023-09-26 22:10:45,865 INFO: Start executing python code
+2023-09-26 22:10:45,865 INFO: start executing python code
+2023-09-26 22:10:45,865 DEBUG: Python code executed, output: Hello,gfdhfghfh!
+2023-09-26 22:10:45,865 INFO: {'output': 'Hello,gfdhfghfh!', 'error': None}
+2023-09-26 22:10:55,785 INFO: python
+2023-09-26 22:10:55,786 INFO: {'code': "print('Hello,gfdhfghfh!')\n\nprint(sys)", 'language': 'python'}
+2023-09-26 22:10:55,786 INFO: Start executing python code
+2023-09-26 22:10:55,786 INFO: start executing python code
+2023-09-26 22:10:55,786 INFO: {'output': '', 'error': "name 'sys' is not defined"}
+2023-09-26 22:11:01,335 INFO: python
+2023-09-26 22:11:01,335 INFO: {'code': "print('Hello,gfdhfghfh!')\nimport sys\nprint(sys)", 'language': 'python'}
+2023-09-26 22:11:01,335 INFO: Start executing python code
+2023-09-26 22:11:01,335 INFO: start executing python code
+2023-09-26 22:11:01,335 DEBUG: Python code executed, output: Hello,gfdhfghfh!
+<module 'sys' (built-in)>
+2023-09-26 22:11:01,336 INFO: {'output': "Hello,gfdhfghfh!\n<module 'sys' (built-in)>", 'error': None}
+2023-09-26 22:45:01,191 INFO: cpp
+2023-09-26 22:45:01,191 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:45:01,191 INFO: start executing c or cpp code
+2023-09-26 22:45:01,192 INFO: start executing c or cpp code
+2023-09-26 22:45:01,192 INFO: {'output': '', 'error': "[Errno 2] No such file or directory: 'builds/cpp/code.cpp'"}
+2023-09-26 22:45:20,013 INFO: cpp
+2023-09-26 22:45:20,013 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:45:20,013 INFO: start executing c or cpp code
+2023-09-26 22:45:20,013 INFO: start executing c or cpp code
+2023-09-26 22:45:20,013 INFO: {'output': '', 'error': "[Errno 2] No such file or directory: 'builds/cpp/code.cpp'"}
+2023-09-26 22:45:30,518 INFO: cpp
+2023-09-26 22:45:30,518 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:45:30,518 INFO: start executing c or cpp code
+2023-09-26 22:45:30,518 INFO: start executing c or cpp code
+2023-09-26 22:45:30,519 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:45:30,522 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:45:45,911 INFO: cpp
+2023-09-26 22:45:45,911 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:45:45,911 INFO: start executing c or cpp code
+2023-09-26 22:45:45,911 INFO: start executing c or cpp code
+2023-09-26 22:45:45,911 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:45:45,911 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:45:47,060 INFO: cpp
+2023-09-26 22:45:47,060 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:45:47,060 INFO: start executing c or cpp code
+2023-09-26 22:45:47,060 INFO: start executing c or cpp code
+2023-09-26 22:45:47,061 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:45:47,061 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:45:47,249 INFO: cpp
+2023-09-26 22:45:47,249 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:45:47,249 INFO: start executing c or cpp code
+2023-09-26 22:45:47,249 INFO: start executing c or cpp code
+2023-09-26 22:45:47,249 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:45:47,249 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:04,494 INFO: cpp
+2023-09-26 22:46:04,494 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:04,494 INFO: start executing c or cpp code
+2023-09-26 22:46:04,494 INFO: start executing c or cpp code
+2023-09-26 22:46:04,495 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:04,495 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:05,151 INFO: cpp
+2023-09-26 22:46:05,151 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:05,151 INFO: start executing c or cpp code
+2023-09-26 22:46:05,151 INFO: start executing c or cpp code
+2023-09-26 22:46:05,151 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:05,151 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:05,376 INFO: cpp
+2023-09-26 22:46:05,376 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:05,376 INFO: start executing c or cpp code
+2023-09-26 22:46:05,376 INFO: start executing c or cpp code
+2023-09-26 22:46:05,377 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:05,377 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:05,528 INFO: cpp
+2023-09-26 22:46:05,528 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:05,528 INFO: start executing c or cpp code
+2023-09-26 22:46:05,528 INFO: start executing c or cpp code
+2023-09-26 22:46:05,528 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:05,528 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:26,514 INFO: cpp
+2023-09-26 22:46:26,514 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:26,514 INFO: start executing c or cpp code
+2023-09-26 22:46:26,515 INFO: start executing c or cpp code
+2023-09-26 22:46:26,515 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:26,515 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:33,322 INFO: cpp
+2023-09-26 22:46:33,322 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:33,322 INFO: start executing c or cpp code
+2023-09-26 22:46:33,322 INFO: start executing c or cpp code
+2023-09-26 22:46:33,323 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:33,323 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:46:35,745 INFO: cpp
+2023-09-26 22:46:35,745 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:46:35,745 INFO: start executing c or cpp code
+2023-09-26 22:46:35,745 INFO: start executing c or cpp code
+2023-09-26 22:46:35,745 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:46:35,745 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:47:13,805 INFO: cpp
+2023-09-26 22:47:13,806 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:47:13,806 INFO: start executing c or cpp code
+2023-09-26 22:47:13,806 INFO: start executing c or cpp code
+2023-09-26 22:47:13,806 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:47:13,806 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:47:24,367 INFO: python
+2023-09-26 22:47:24,369 INFO: {'code': "print('Hello,world!')", 'language': 'python'}
+2023-09-26 22:47:24,369 INFO: Start executing python code
+2023-09-26 22:47:24,369 INFO: start executing python code
+2023-09-26 22:47:24,369 DEBUG: Python code executed, output: Hello,world!
+2023-09-26 22:47:24,369 INFO: {'output': 'Hello,world!', 'error': None}
+2023-09-26 22:47:26,805 INFO: cpp
+2023-09-26 22:47:26,805 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:47:26,805 INFO: start executing c or cpp code
+2023-09-26 22:47:26,805 INFO: start executing c or cpp code
+2023-09-26 22:47:26,806 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:47:26,806 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:49:50,463 INFO: cpp
+2023-09-26 22:49:50,463 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:49:50,463 INFO: start executing c or cpp code
+2023-09-26 22:49:50,463 INFO: start executing c or cpp code
+2023-09-26 22:49:50,463 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:49:50,464 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:50:15,276 DEBUG: Using proactor: IocpProactor
+2023-09-26 22:50:26,922 INFO: cpp
+2023-09-26 22:50:26,922 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:50:26,922 INFO: start executing c or cpp code
+2023-09-26 22:50:26,922 INFO: start executing c or cpp code
+2023-09-26 22:50:26,923 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:51:45,289 DEBUG: Using proactor: IocpProactor
+2023-09-26 22:51:47,266 INFO: cpp
+2023-09-26 22:51:47,266 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:51:47,266 INFO: start executing c or cpp code
+2023-09-26 22:51:47,266 INFO: start executing c or cpp code
+2023-09-26 22:51:47,267 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:52:45,730 DEBUG: Using proactor: IocpProactor
+2023-09-26 22:52:47,320 INFO: cpp
+2023-09-26 22:52:47,320 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:52:47,320 INFO: start executing c or cpp code
+2023-09-26 22:52:47,321 INFO: start executing c or cpp code
+2023-09-26 22:52:47,321 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:54:13,479 INFO: {'output': '', 'error': "No section: 'COMPILER'"}
+2023-09-26 22:54:17,558 DEBUG: Using proactor: IocpProactor
+2023-09-26 22:54:19,877 INFO: cpp
+2023-09-26 22:54:19,877 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:54:19,877 INFO: start executing c or cpp code
+2023-09-26 22:54:19,877 INFO: start executing c or cpp code
+2023-09-26 22:54:19,878 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:55:21,666 INFO: {'output': '', 'error': "No section: 'compiler'"}
+2023-09-26 22:55:22,339 INFO: cs
+2023-09-26 22:55:22,340 INFO: {'code': 'Console.WriteLine("Hello,world!");', 'language': 'cs'}
+2023-09-26 22:55:22,341 INFO: start executing c# code
+2023-09-26 22:55:22,352 INFO: {'output': '', 'error': '[WinError 2] Не удается найти указанный файл'}
+2023-09-26 22:55:25,503 INFO: cs
+2023-09-26 22:55:25,504 INFO: {'code': 'Console.WriteLine("Hello,world!");', 'language': 'cs'}
+2023-09-26 22:55:25,504 INFO: start executing c# code
+2023-09-26 22:55:25,514 INFO: {'output': '', 'error': '[WinError 2] Не удается найти указанный файл'}
+2023-09-26 22:55:37,951 INFO: js
+2023-09-26 22:55:37,952 INFO: {'code': "console.log('Hello,world!')", 'language': 'js'}
+2023-09-26 22:55:37,952 INFO: start executing javascript code
+2023-09-26 22:55:37,953 INFO: {'output': '', 'error': "[Errno 2] No such file or directory: 'builds/js/code.js'"}
+2023-09-26 22:56:27,676 DEBUG: Using proactor: IocpProactor
+2023-09-26 22:56:29,763 INFO: js
+2023-09-26 22:56:29,763 INFO: {'code': "console.log('Hello,world!')", 'language': 'js'}
+2023-09-26 22:56:29,763 INFO: start executing javascript code
+2023-09-26 22:56:29,764 DEBUG: Code file created at builds/js/code.js
+2023-09-26 22:56:29,819 INFO: Code executed, stdout: Hello,world!, stderr: None
+2023-09-26 22:56:29,819 INFO: {'output': 'Hello,world!', 'error': None}
+2023-09-26 22:56:33,620 INFO: cpp
+2023-09-26 22:56:33,620 INFO: {'code': "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}", 'language': 'cpp'}
+2023-09-26 22:56:33,620 INFO: start executing c or cpp code
+2023-09-26 22:56:33,620 INFO: start executing c or cpp code
+2023-09-26 22:56:33,621 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:56:35,457 INFO: Code compiled with command: g++ builds/cpp/code.cpp -o builds/cpp/code
+2023-09-26 22:56:35,551 INFO: Code executed, stdout: 1919706145, stderr: None
+2023-09-26 22:56:35,551 INFO: {'output': '1919706145', 'error': None}
+2023-09-26 22:56:49,860 INFO: cpp
+2023-09-26 22:56:49,860 INFO: {'code': '#include <iostream>\n\nint main(){\n   std::cout << "hello,world!" << std::endl;\n  return 0;\n}', 'language': 'cpp'}
+2023-09-26 22:56:49,860 INFO: start executing c or cpp code
+2023-09-26 22:56:49,860 INFO: start executing c or cpp code
+2023-09-26 22:56:49,860 DEBUG: Code file created at builds/cpp/code.cpp
+2023-09-26 22:56:50,284 INFO: Code compiled with command: g++ builds/cpp/code.cpp -o builds/cpp/code
+2023-09-26 22:56:50,319 INFO: Code executed, stdout: hello,world!, stderr: None
+2023-09-26 22:56:50,319 INFO: {'output': 'hello,world!', 'error': None}
+2023-09-26 22:56:53,552 INFO: c
+2023-09-26 22:56:53,552 INFO: {'code': "#include <stdio.h>\n\nint main() {\n\nprintf('Hello world');\nreturn 0;\n}", 'language': 'c'}
+2023-09-26 22:56:53,552 INFO: start executing c or cpp code
+2023-09-26 22:56:53,552 INFO: start executing c or cpp code
+2023-09-26 22:56:53,552 INFO: {'output': '', 'error': "[Errno 2] No such file or directory: 'builds/c/code.c'"}
+2023-09-26 22:57:00,377 INFO: c
+2023-09-26 22:57:00,377 INFO: {'code': "#include <stdio.h>\n\nint main() {\n\nprintf('Hello world');\nreturn 0;\n}", 'language': 'c'}
+2023-09-26 22:57:00,377 INFO: start executing c or cpp code
+2023-09-26 22:57:00,377 INFO: start executing c or cpp code
+2023-09-26 22:57:00,378 DEBUG: Code file created at builds/c/code.c
+2023-09-26 22:57:00,429 INFO: {'output': '', 'error': "Command '['g++', 'builds/c/code.c', '-o', 'builds/c/code']' returned non-zero exit status 1."}
+2023-09-26 22:57:41,695 DEBUG: Using proactor: IocpProactor
+2023-09-26 22:57:44,038 INFO: c
+2023-09-26 22:57:44,038 INFO: {'code': "#include <stdio.h>\n\nint main() {\n\nprintf('Hello world');\nreturn 0;\n}", 'language': 'c'}
+2023-09-26 22:57:44,038 INFO: start executing c or cpp code
+2023-09-26 22:57:44,038 INFO: start executing c or cpp code
+2023-09-26 22:57:44,038 DEBUG: Code file created at builds/c/code.c
+2023-09-26 22:57:44,403 INFO: Code compiled with command: gcc builds/c/code.c -o builds/c/code
+2023-09-26 22:57:44,786 INFO: Code executed, stdout: , stderr: None
+2023-09-26 22:57:44,786 INFO: {'output': '', 'error': None}
+2023-09-26 22:57:56,716 INFO: c
+2023-09-26 22:57:56,717 INFO: {'code': '#include <stdio.h>\n\nint main() {\n\nprintf("Hello world");\nreturn 0;\n}', 'language': 'c'}
+2023-09-26 22:57:56,717 INFO: start executing c or cpp code
+2023-09-26 22:57:56,717 INFO: start executing c or cpp code
+2023-09-26 22:57:56,717 DEBUG: Code file created at builds/c/code.c
+2023-09-26 22:57:56,855 INFO: Code compiled with command: gcc builds/c/code.c -o builds/c/code
+2023-09-26 22:57:56,891 INFO: Code executed, stdout: Hello world, stderr: None
+2023-09-26 22:57:56,891 INFO: {'output': 'Hello world', 'error': None}
+2023-09-26 22:57:59,737 INFO: cs
+2023-09-26 22:57:59,737 INFO: {'code': 'Console.WriteLine("Hello,world!");', 'language': 'cs'}
+2023-09-26 22:57:59,737 INFO: start executing c# code
+2023-09-26 22:57:59,740 INFO: {'output': '', 'error': '[WinError 2] Не удается найти указанный файл'}
+2023-09-26 22:58:56,615 INFO: cs
+2023-09-26 22:58:56,615 INFO: {'code': 'Console.WriteLine("Hello,world!");', 'language': 'cs'}
+2023-09-26 22:58:56,615 INFO: start executing c# code
+2023-09-26 22:58:56,618 INFO: {'output': '', 'error': '[WinError 2] Не удается найти указанный файл'}
+2023-09-26 22:59:01,015 INFO: python
+2023-09-26 22:59:01,015 INFO: {'code': "print('Hello,world!')", 'language': 'python'}
+2023-09-26 22:59:01,015 INFO: Start executing python code
+2023-09-26 22:59:01,015 INFO: start executing python code
+2023-09-26 22:59:01,015 DEBUG: Python code executed, output: Hello,world!
+2023-09-26 22:59:01,015 INFO: {'output': 'Hello,world!', 'error': None}
+2023-09-26 22:59:02,970 INFO: cs
+2023-09-26 22:59:02,970 INFO: {'code': 'Console.WriteLine("Hello,world!");', 'language': 'cs'}
+2023-09-26 22:59:02,970 INFO: start executing c# code
+2023-09-26 22:59:02,974 INFO: {'output': '', 'error': '[WinError 2] Не удается найти указанный файл'}
+2023-09-26 22:59:26,001 INFO: cs
+2023-09-26 22:59:26,002 INFO: {'code': 'Console.WriteLine("Hello,world!");', 'language': 'cs'}
+2023-09-26 22:59:26,002 INFO: start executing c# code
+2023-09-26 22:59:26,005 INFO: {'output': '', 'error': '[WinError 2] Не удается найти указанный файл'}
+2023-09-26 22:59:27,314 INFO: go
+2023-09-26 22:59:27,314 INFO: {'code': 'package main', 'language': 'go'}
+2023-09-26 22:59:27,314 INFO: start executing c or cpp code
+2023-09-26 22:59:27,314 INFO: {'output': '', 'error': "[Errno 2] No such file or directory: 'builds/go/code.go'"}
+2023-09-26 22:59:30,503 INFO: ruby
+2023-09-26 22:59:30,503 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:30,503 INFO: start executing c or cpp code
+2023-09-26 22:59:30,503 INFO: {'output': '', 'error': "[Errno 2] No such file or directory: 'builds/ruby/code.ruby'"}
+2023-09-26 22:59:49,652 INFO: ruby
+2023-09-26 22:59:49,652 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:49,652 INFO: start executing c or cpp code
+2023-09-26 22:59:49,652 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:50,746 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:50,746 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 22:59:50,922 INFO: ruby
+2023-09-26 22:59:50,922 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:50,922 INFO: start executing c or cpp code
+2023-09-26 22:59:50,922 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:51,081 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:51,081 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 22:59:57,766 INFO: ruby
+2023-09-26 22:59:57,766 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:57,766 INFO: start executing c or cpp code
+2023-09-26 22:59:57,767 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:57,924 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:57,925 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 22:59:58,409 INFO: ruby
+2023-09-26 22:59:58,409 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:58,409 INFO: start executing c or cpp code
+2023-09-26 22:59:58,409 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:58,570 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:58,570 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 22:59:58,790 INFO: ruby
+2023-09-26 22:59:58,790 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:58,790 INFO: start executing c or cpp code
+2023-09-26 22:59:58,791 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:58,947 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:58,947 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 22:59:58,998 INFO: ruby
+2023-09-26 22:59:58,998 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:58,998 INFO: start executing c or cpp code
+2023-09-26 22:59:58,998 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:59,155 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:59,155 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 22:59:59,158 INFO: ruby
+2023-09-26 22:59:59,158 INFO: {'code': "puts 'hello, world!'", 'language': 'ruby'}
+2023-09-26 22:59:59,158 INFO: start executing c or cpp code
+2023-09-26 22:59:59,160 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 22:59:59,317 INFO: Code executed, stdout: hello, world!, stderr: None
+2023-09-26 22:59:59,317 INFO: {'output': 'hello, world!', 'error': None}
+2023-09-26 23:00:00,244 INFO: ruby
+2023-09-26 23:00:00,244 INFO: {'code': "puts 'hello, wdsadorld!'", 'language': 'ruby'}
+2023-09-26 23:00:00,244 INFO: start executing c or cpp code
+2023-09-26 23:00:00,244 DEBUG: Code file created at builds/ruby/code.ruby
+2023-09-26 23:00:00,405 INFO: Code executed, stdout: hello, wdsadorld!, stderr: None
+2023-09-26 23:00:00,405 INFO: {'output': 'hello, wdsadorld!', 'error': None}

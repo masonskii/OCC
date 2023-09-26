@@ -3,7 +3,7 @@ from starlette.middleware.cors import CORSMiddleware
 
 from auth.base_config import auth_backend, fastapi_users
 from auth.schemas import UserRead, UserCreate
-from src.executing.routers import router as executing_router
+from backend.src.executing.routers import router as executing_router
 
 app = FastAPI(
     title="NotebookOpenAPI"
