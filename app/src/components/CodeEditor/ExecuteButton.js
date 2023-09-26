@@ -10,7 +10,7 @@ const ExecBtn = ({ code, language, onOutput }) => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/runcode",
+        "http://127.0.0.1:8000/code/exec",
         codeData
       );
       const result = response.data;

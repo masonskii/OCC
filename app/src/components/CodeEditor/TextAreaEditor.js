@@ -72,8 +72,8 @@ function TextAreaEditor() {
     }
   };
   return (
-    <div>
-      <div>
+    <div className="diplay-content">
+      <div className="display-content-flexgroup">
         <LanguageSelection onSelectionChange={updateCodeMirrorMode} />{" "}
         <ExecBtn code={code} language={language} onOutput={handleOutput} />{" "}
         <CodeMirror

@@ -115,3 +115,37 @@ button#run-button:hover {
     background-color: white;
     color: #007bff;
 }
+.diplay-content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.diplay-content-ctx{
+    width: 100%;
+    height: 100%;
+}
+.display-content-flexgroup {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin-right: 20px;
+    height: 60vh;
+}
+
+.cm-theme {
+    position: relative !important;
+    display: block !important;
+    width: 100%!important;;
+    height: 90%!important;;
+}
+.cm-editor.ͼ1.ͼ3.ͼ4.ͼpe.ͼ82 {
+    height: 90%!important;;
+}
+
+.App {
+    width: 20%;
+    /* height: 100%; */
+    background: aliceblue;
+}

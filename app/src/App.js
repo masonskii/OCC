@@ -7,7 +7,7 @@ function App() {
       <div className="container">
         <h1 className="title"> Online Code Editor </h1>{" "}
       </div>{" "}
-      <div>
+      <div className="diplay-content-ctx">
         <TextAreaEditor />
       </div>{" "}
     </div>
