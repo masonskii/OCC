@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-
+import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 const LanguageSelection = ({ onSelectionChange }) => {
   const handleChange = useCallback(
     (event) => {
@@ -10,18 +10,21 @@ const LanguageSelection = ({ onSelectionChange }) => {
   );
 
   return (
-    <select
-      id="language"
-      className="language-select"
-      defaultValue="python"
-      onChange={handleChange}
-    >
-      <option value="python"> Python </option>{" "}
-      <option value="cpp"> C++ </option>{" "}
-      <option value="js"> JavaScript </option> <option value="c"> C </option>{" "}
-      <option value="cs"> C#(.NET 7) </option>{" "}
-      <option value="go"> Golang </option> <option value="ruby"> Ruby </option>{" "}
-    </select>
+      <FormControl fullWidth>
+        <Select
+          id="language"
+          className="language-select"
+          defaultValue="python"
+          onChange={handleChange}
+          sx={{color: '#FB961FFF' }}
+        >
+      <MenuItem  value="python"> Python </MenuItem >{" "}
+      <MenuItem  value="cpp"> C++ </MenuItem >{" "}
+      <MenuItem  value="js"> JavaScript </MenuItem > <MenuItem value="c"> C </MenuItem>{" "}
+      <MenuItem  value="cs"> C#(.NET 7) </MenuItem >{" "}
+      <MenuItem  value="go"> Golang </MenuItem > <MenuItem value="ruby"> Ruby </MenuItem>{" "}
+        </Select>
+    </FormControl>
   );
 };
 

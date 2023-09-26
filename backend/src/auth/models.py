@@ -57,6 +57,7 @@ class User(SQLAlchemyBaseUserTable[int], Base):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        storage_path = f"storage/user_storage_{self.email}/{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
+        # storage_path = f"storage/user_storage_{self.email}/{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}"
+        storage_path = f"storage/user_storage_{self.email}/"
         os.makedirs(storage_path, exist_ok=True)
         self.storage = storage_path

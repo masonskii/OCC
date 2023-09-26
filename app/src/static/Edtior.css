@@ -123,22 +123,28 @@ button#run-button:hover {
     flex-wrap: nowrap;
 }
 .diplay-content-ctx{
+        background-color: #272822;
     width: 100%;
     height: 100%;
 }
 .display-content-flexgroup {
+        background-color: #272822;
     display: block;
     position: relative;
     width: 80%;
-    margin-right: 20px;
     height: 60vh;
+}
+.CodeMirror {
+    padding-right: 20%;
+    height: 90%!important;
 }
 
 .cm-theme {
+        background-color: #272822;
     position: relative !important;
     display: block !important;
-    width: 100%!important;;
-    height: 90%!important;;
+    width: 100%!important;
+    height: 90%!important;
 }
 .cm-editor.ͼ1.ͼ3.ͼ4.ͼpe.ͼ82 {
     height: 90%!important;;
@@ -146,6 +152,26 @@ button#run-button:hover {
 
 .App {
     width: 20%;
-    /* height: 100%; */
-    background: aliceblue;
+        background-color: #272822;
+}
+hr {
+  border: none;
+  border-top: 2px solid #000000;
+  color: #000000;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+.vertical-line {
+  border-left: 1px solid black;
+  height: 100vh;
+}
+.output-container-ctx {
+        background-color: #272822;
+    width: 100%;
+    color: #a26f08;
+}
+.section-runner{
+        background-color: #272822;
 }

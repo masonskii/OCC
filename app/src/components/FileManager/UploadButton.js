@@ -1,5 +1,7 @@
 import React from "react";
 
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const UploadButton = ({ onUpload }) => {
   const handleFileInputChange = (event) => {
     const file = event.target.files[0];
@@ -16,13 +18,15 @@ const UploadButton = ({ onUpload }) => {
 
   return (
     <div>
-      <input
-        type="file"
-        id="file-input"
-        onChange={handleFileInputChange}
-        style={{ display: "none" }}
-      />{" "}
-      <label htmlFor="file-input"> Upload File </label>{" "}
+<input
+  type="file"
+  id="file-input"
+  onChange={handleFileInputChange}
+  style={{ display: "none" }}
+/>
+<label htmlFor="file-input">
+  <FontAwesomeIcon icon="upload" />
+</label>
     </div>
   );
 };

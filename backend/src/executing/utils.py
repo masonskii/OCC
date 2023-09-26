@@ -67,7 +67,7 @@ def execute_c_code(params: dict) -> [str, str or None]:
     create_code_file(path, code)
 
     # Compile the code
-    compiler = "g++" if language == "c++" else "gcc"
+    compiler = "g++" if language == "cpp" else "gcc"
     cmd: list[str] = [compiler, path, '-o', f"builds/{language}/code"]
     subprocess.run(cmd, check=True)
     logging.info(f'Code compiled with command: {" ".join(cmd)}')

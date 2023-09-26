@@ -10,5 +10,5 @@ DB_USER: str | None = os.environ.get("DB_USER")
 DB_PASS: str | None = os.environ.get("DB_PASS")
 DB_NAME: str | None = os.environ.get("DB_NAME")
 
-SECRET_AUTH: str | None = os.environ.get("SECRET_AUTH")
+SECRET_COOKIE: str | None = os.environ.get("SECRET_COOKIE")
 
