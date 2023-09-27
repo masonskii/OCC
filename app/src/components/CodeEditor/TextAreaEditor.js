@@ -1,16 +1,19 @@
 import CodeMirror from "@uiw/react-codemirror";
 import React, { useState } from "react";
 import { langs } from "@uiw/codemirror-extensions-langs";
-import { monokai } from "@uiw/codemirror-themes-all";
+import { vscodeDark } from "@uiw/codemirror-themes-all";
 import "../../static/Edtior.css";
+import "../../static/FileManager.css";
 import ExecBtn from "./ExecuteButton.js";
 import LanguageSelection from "./LanguageSelection";
 import FileListComponent from "../FileManager/FileListComponent.js";
+import { saveAs } from "file-saver";
 
 function TextAreaEditor() {
   const [language, setLanguage] = useState("python");
   const [code, setCode] = useState("print('Hello,world!')");
   const [result, setResult] = useState("no output");
+
   const handleOutput = (output) => {
     setResult(output);
   };
@@ -18,16 +21,19 @@ function TextAreaEditor() {
   const handleCodeChange = (editor) => {
     setCode(editor);
   };
-  const handleFileSelect = (file) => {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      TextAreaEditor.setCode(e.target.result);
-    };
-    reader.readAsText(file);
-  };
+
   const updateCodeMirrorMode = (selectedLanguage) => {
     setLanguage(selectedLanguage);
     setCode(getDefaultCode(selectedLanguage));
+  };
+  const handleSaveCode = () => {
+    const blob = new Blob([code], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, `code.${getMode(language).name}`);
+  };
+  const handleLoadCode = (loadedCode) => {
+    if (loadedCode) {
+      setCode(loadedCode);
+    }
   };
 
   const getDefaultCode = (selectedLanguage) => {
@@ -72,26 +78,32 @@ function TextAreaEditor() {
     }
   };
   return (
-    <div className="diplay-content">
+    <>
       <div className="display-content-flexgroup">
         <div className="section-runner">
-        <LanguageSelection onSelectionChange={updateCodeMirrorMode} />{" "}
-        <ExecBtn code={code} language={language} onOutput={handleOutput} />{" "}
-          </div>
-        <CodeMirror
-          value={getDefaultCode(language)}
-          theme={monokai}
-          extensions={[getMode(language)]}
-          onChange={handleCodeChange}
-        />{" "}
-        <hr/>
-        <div className="output-container-ctx">
-          <pre id="output" >{result} </pre>{" "}
+          <div className="run_g2">
+            <LanguageSelection onSelectionChange={updateCodeMirrorMode} />{" "}
+            <ExecBtn code={code} language={language} onOutput={handleOutput} />{" "}
+          </div>{" "}
+          <div className="title_section_files">
+            <h1> Your files here </h1>{" "}
+          </div>{" "}
+        </div>{" "}
+        <div className="editor_g3">
+          <div className="g4">
+            <CodeMirror
+              className="Editor"
+              value={code}
+              theme={vscodeDark}
+              extensions={[getMode(language)]}
+              onChange={handleCodeChange}
+            />{" "}
+            <pre id="output"> {result} </pre>{" "}
+          </div>{" "}
+          <FileListComponent onCodeLoaded={handleLoadCode} />{" "}
         </div>{" "}
       </div>{" "}
-      <div className="vertical-line"/>
-      <FileListComponent onFileSelect={handleFileSelect} />{" "}
-    </div>
+    </>
   );
 }
 

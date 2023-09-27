@@ -1,24 +1,3 @@
-::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #491166 0%, 1f0b6b 100%);
-}
-
-::-webkit-scrollbar {
-    width: 9px;
-    /* background-color: #f7f7f7; */
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #491166 0%, #1f0b6b 50%, #273446 51%, 1f0b6b 100%);
-    border-radius: 8px;
-    box-shadow: inset 0 0 6px rgb(129 45 183 / 90%);
-}
-
-.CodeMirror-scrollbar-filler {
-    right: 0;
-    bottom: 0;
-    background: transparent;
-}
-
 button#run-button {
     width: 100px;
     background: #b6f1b6;
@@ -46,16 +25,20 @@ button#run-button:hover {
     padding-right: 20%;
 }
 
-.output {
+#output {
     width: 100%;
     resize: none;
-    color: #e1ecfa;
-    font-size: 14px;
+    color: #fb871e;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     white-space: pre-wrap;
     padding-left: 10px;
     padding-top: 10px;
     margin: 0;
+    border-top: 2px solid #000000;
+    background-color: #1e1e1e;
+    color: #a26f08;
+    overflow: hidden;
 }
 
 .output-container {
@@ -66,16 +49,6 @@ button#run-button:hover {
     flex-direction: column;
     flex-wrap: nowrap;
 }
-
-.input-label,
-.output-label {
-    font-size: 14px;
-    font-weight: bold;
-    color: #e1ecfa;
-}
-
-
-/* Выбор языка */
 
 .tabs {
     display: flex;
@@ -115,63 +88,82 @@ button#run-button:hover {
     background-color: white;
     color: #007bff;
 }
-.diplay-content {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-.diplay-content-ctx{
-        background-color: #272822;
-    width: 100%;
-    height: 100%;
-}
+
 .display-content-flexgroup {
-        background-color: #272822;
+    background-color: #1e1e1e;
     display: block;
     position: relative;
-    width: 80%;
-    height: 60vh;
-}
-.CodeMirror {
-    padding-right: 20%;
-    height: 90%!important;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.cm-theme {
-        background-color: #272822;
+.Editor.cm-theme {
+    background-color: #1e1e1e;
     position: relative !important;
     display: block !important;
     width: 100%!important;
     height: 90%!important;
-}
-.cm-editor.ͼ1.ͼ3.ͼ4.ͼpe.ͼ82 {
-    height: 90%!important;;
+    overflow: hidden;
 }
 
 .App {
     width: 20%;
-        background-color: #272822;
+    background-color: #1e1e1e;
+    height: 90%;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    ;
+    border-right: 2px solid #000000;
 }
+
 hr {
-  border: none;
-  border-top: 2px solid #000000;
-  color: #000000;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
+    border: none;
+    border-top: 2px solid #000000;
+    color: #000000;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
 }
 
 .vertical-line {
-  border-left: 1px solid black;
-  height: 100vh;
+    border-left: 1px solid black;
+    height: 100vh;
 }
-.output-container-ctx {
-        background-color: #272822;
+
+.section-runner {
+    display: flex;
+    background-color: #1e1e1e;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+}
+
+.editor_g3 {
     width: 100%;
-    color: #a26f08;
+    height: 80vh;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
 }
-.section-runner{
-        background-color: #272822;
+
+.g4 {
+    height: 100%;
+    width: 100%;
+}
+
+.run_g2 {
+    width: 90%;
+    margin-left: 9em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.title_section_files {
+    margin-left: 15px;
 }
