@@ -39,18 +39,6 @@
     background-size: contain;
 }
 
-.fileManager-listItem .folder-icon {
-    background-image: url("path/to/folder-icon.png");
-}
-
-.fileManager-listItem .file-icon.doc {
-    background-image: url("path/to/doc-icon.png");
-}
-
-.fileManager-listItem .file-icon.pdf {
-    background-image: url("path/to/pdf-icon.png");
-}
-
 .fileManager-info {
     background-color: #3f3f3f;
     color: #ffffff;
@@ -60,4 +48,14 @@
 
 .fileManager-info span {
     font-weight: bold;
+}
+
+span.file-name {
+    margin-left: 10px;
+    color: #1976d2;
+}
+
+.file-item {
+    margin-left: 20px;
+    color: #1976d2;
 }

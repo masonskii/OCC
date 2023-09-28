@@ -1,16 +1,19 @@
 import CodeMirror from "@uiw/react-codemirror";
 import React, { useState } from "react";
 import { langs } from "@uiw/codemirror-extensions-langs";
-import { duotoneDark } from "@uiw/codemirror-themes-all";
+import { vscodeDark } from "@uiw/codemirror-themes-all";
 import "../../static/Edtior.css";
+import "../../static/FileManager.css";
 import ExecBtn from "./ExecuteButton.js";
 import LanguageSelection from "./LanguageSelection";
 import FileListComponent from "../FileManager/FileListComponent.js";
+import { saveAs } from "file-saver";
 
 function TextAreaEditor() {
   const [language, setLanguage] = useState("python");
   const [code, setCode] = useState("print('Hello,world!')");
   const [result, setResult] = useState("no output");
+
   const handleOutput = (output) => {
     setResult(output);
   };
@@ -18,16 +21,19 @@ function TextAreaEditor() {
   const handleCodeChange = (editor) => {
     setCode(editor);
   };
-  const handleFileSelect = (file) => {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      TextAreaEditor.setCode(e.target.result);
-    };
-    reader.readAsText(file);
-  };
+
   const updateCodeMirrorMode = (selectedLanguage) => {
     setLanguage(selectedLanguage);
     setCode(getDefaultCode(selectedLanguage));
+  };
+  const handleSaveCode = () => {
+    const blob = new Blob([code], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, `code.${getMode(language).name}`);
+  };
+  const handleLoadCode = (loadedCode) => {
+    if (loadedCode) {
+      setCode(loadedCode);
+    }
   };
 
   const getDefaultCode = (selectedLanguage) => {
@@ -35,9 +41,9 @@ function TextAreaEditor() {
       case "python":
         return "print('Hello,world!')";
       case "c":
-        return "#include <stdio.h>\n\nint main() {\n\nprintf('Hello world');\nreturn 0;\n}";
+        return '#include <stdio.h>\n\nint main() {\n\nprintf("Hello world");\nreturn 0;\n}';
       case "cpp":
-        return "#include <iostream>\n\nint main(){\n   std::cout << 'hello,world!' << std::endl;\n  return 0;\n}";
+        return '#include <iostream>\n\nint main(){\n   std::cout << "hello,world!" << std::endl;\n  return 0;\n}';
       case "cs":
         return 'Console.WriteLine("Hello,world!");';
       case "js":
@@ -72,22 +78,32 @@ function TextAreaEditor() {
     }
   };
   return (
-    <div className="diplay-content">
+    <>
       <div className="display-content-flexgroup">
-        <LanguageSelection onSelectionChange={updateCodeMirrorMode} />{" "}
-        <ExecBtn code={code} language={language} onOutput={handleOutput} />{" "}
-        <CodeMirror
-          value={getDefaultCode(language)}
-          theme={duotoneDark}
-          extensions={[getMode(language)]}
-          onChange={handleCodeChange}
-        />{" "}
-        <div>
-          <label> Output: </label> <pre id="output"> {result} </pre>{" "}
+        <div className="section-runner">
+          <div className="run_g2">
+            <LanguageSelection onSelectionChange={updateCodeMirrorMode} />{" "}
+            <ExecBtn code={code} language={language} onOutput={handleOutput} />{" "}
+          </div>{" "}
+          <div className="title_section_files">
+            <h1> Your files here </h1>{" "}
+          </div>{" "}
+        </div>{" "}
+        <div className="editor_g3">
+          <div className="g4">
+            <CodeMirror
+              className="Editor"
+              value={code}
+              theme={vscodeDark}
+              extensions={[getMode(language)]}
+              onChange={handleCodeChange}
+            />{" "}
+            <pre id="output"> {result} </pre>{" "}
+          </div>{" "}
+          <FileListComponent onCodeLoaded={handleLoadCode} />{" "}
         </div>{" "}
       </div>{" "}
-      <FileListComponent onFileSelect={handleFileSelect} />{" "}
-    </div>
+    </>
   );
 }
 

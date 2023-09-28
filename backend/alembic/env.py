@@ -8,8 +8,8 @@ from sqlalchemy import pool
 
 sys.path.append(os.path.join(sys.path[0], 'src'))
 
-from src.config import DB_HOST, DB_PORT, DB_USER, DB_NAME, DB_PASS
-from src.auth.models import metadata as auth_metadata
+from backend.src.config import DB_HOST, DB_PORT, DB_USER, DB_NAME, DB_PASS
+from backend.src.auth.models import metadata as auth_metadata
 
 config = context.config
 

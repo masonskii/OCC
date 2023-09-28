@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 import axios from "axios";
-
+import Button from "@mui/material/Button";
 const ExecBtn = ({ code, language, onOutput }) => {
   const executeCode = useCallback(async () => {
     const codeData = {
@@ -14,13 +14,13 @@ const ExecBtn = ({ code, language, onOutput }) => {
         codeData
       );
       const result = response.data;
-      onOutput(result.output || result.error || "No output");
+      onOutput(result.output || result.error);
     } catch (error) {
       onOutput("Error: " + error.message);
     }
   }, [code, language, onOutput]);
 
-  return <button onClick={executeCode}> Run Code </button>;
+  return <Button onClick={executeCode} variant="contained" color="primary"> Run Code </Button>;
 };
 
 export default ExecBtn;

@@ -1,6 +1,6 @@
 import configparser
 
-config_path = "config.ini"
+config_path = "./config_com.ini"
 # Create a ConfigParser object
 cfg = configparser.ConfigParser()
 

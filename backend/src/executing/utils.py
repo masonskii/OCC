@@ -4,7 +4,7 @@ import logging
 import subprocess
 from contextlib import redirect_stdout
 
-from src.executing.config import cfg
+from backend.src.executing.config import cfg
 
 # Configure logging
 logging.basicConfig(filename='./log/logfile.log', level=logging.DEBUG,
@@ -67,8 +67,8 @@ def execute_c_code(params: dict) -> [str, str or None]:
     create_code_file(path, code)
 
     # Compile the code
-    cmd: list[str] = [cfg.get('COMPILER', f'{language}'),
-                      path, '-o', f"builds/{language}/code"]
+    compiler = "g++" if language == "cpp" else "gcc"
+    cmd: list[str] = [compiler, path, '-o', f"builds/{language}/code"]
     subprocess.run(cmd, check=True)
     logging.info(f'Code compiled with command: {" ".join(cmd)}')
 
@@ -93,7 +93,7 @@ def execute_js_code(params: dict) -> [str, str or None]:
     # Write the code to a file
     create_code_file(path, code)
     # Execute the compiled code
-    execute_cmd: list[str] = [cfg.get('COMPILER', f'{language}'), path]
+    execute_cmd: list[str] = ['node', path]
     process: subprocess.CompletedProcess[str] = subprocess.run(
         execute_cmd, capture_output=True, text=True)
     logging.info(
@@ -141,11 +141,11 @@ def execute_ruby_code(params: dict) -> [str, str or None]:
     language: str = params['language']
     code: str = params['code']
 
-    path: str = f"builds/{language}/code.{language}"
+    path: str = f"builds/{language}/code.ruby"
     # Write the code to a file
     create_code_file(path, code)
     # Execute the compiled code
-    execute_cmd: list[str] = [cfg.get('COMPILER', f'{language}'), path]
+    execute_cmd: list[str] = ['ruby', path]
     process: subprocess.CompletedProcess[str] = subprocess.run(
         execute_cmd, capture_output=True, text=True)
     logging.info(
@@ -165,7 +165,7 @@ def execute_golang_code(params: dict) -> [str, str or None]:
     # Write the code to a file
     create_code_file(path, code)
     # Compile the code
-    cmd: list[str] = [cfg.get('COMPILER', f'{language}'), 'build',
+    cmd: list[str] = ['go', 'build',
                       path]
     subprocess.run(cmd, check=True)
     logging.info(f'Code compiled with command: {" ".join(cmd)}')

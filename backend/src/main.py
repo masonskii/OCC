@@ -3,7 +3,8 @@ from starlette.middleware.cors import CORSMiddleware
 
 from auth.base_config import auth_backend, fastapi_users
 from auth.schemas import UserRead, UserCreate
-from src.executing.routers import router as executing_router
+from backend.src.executing.routers import router as executing_router
+from backend.src.file_manager.routers import router as fm_router
 
 app = FastAPI(
     title="NotebookOpenAPI"
@@ -36,6 +37,7 @@ app.include_router(
     tags=["Auth"],
 )
 app.include_router(executing_router)
+app.include_router(fm_router)
 if __name__ == '__main__':
     import uvicorn
 

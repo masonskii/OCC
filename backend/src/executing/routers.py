@@ -4,11 +4,10 @@ from typing import List
 
 from fastapi import APIRouter, Depends
 
-from src.executing.schemas import CodeModel
-from src.executing.utils import execute_code
+from backend.src.executing.schemas import CodeModel
+from backend.src.executing.utils import execute_code
 
 USING_LANGUAGE = ['python', 'c', 'cpp', 'js', 'cs', 'ruby', 'go']
-
 
 # Configure logging
 logging.basicConfig(filename='./log/logfile.log', level=logging.DEBUG,
@@ -20,7 +19,7 @@ router = APIRouter(
 )
 
 
-@router.post('/exec', response_model=List[CodeModel])
+@router.post('/exec')
 async def executing_code(params: dict):
     language = params['language']
     logging.info(language)
@@ -45,5 +44,3 @@ async def executing_code(params: dict):
             'error': 'Unsupported language'
         }
     return result
-
-
