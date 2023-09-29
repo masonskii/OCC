@@ -1,0 +1,121 @@
+.container {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form-container, .registration {
+  width: 300px;
+}
+
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
+.registration {
+  background: burlywood;
+}
+
+/* Keyframes for animation */
+@keyframes slideOutRight {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+label {
+  color: white;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type=email], input[type=password], input[type="text"], input[type="email"], input[type="password"] {
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+input[type=email]:focus, input[type=password]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  box-shadow: 0 0 5px rgba(0,0,0,0.25);
+  outline: none;
+  border-color: #0097a7;
+  box-shadow: 0 0 10px #0097a7;
+}
+
+.btn-login, button[type="submit"] {
+  padding: 10px 20px;
+  color: white;
+  background-color: #3f51b5;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.btn-login:hover, button[type="submit"]:hover {
+  background-color: #283593;
+}
+
+.btn-login:active {
+  transform: translateY(2px);
+}
+
+.left-side, .right-side {
+  transition: transform 1s ease-out; 
+}
+
+.left-side {
+  position: fixed;
+  left: 0;
+}
+
+.right-side {
+  position: fixed;
+  right: 0;
+}
+
+.active {
+  transform: translateX(0); 
+}
+
+.inactive {
+  transform: translateX(-100%);
+}
+
+IconButton {
+  float: right;
+  color: #0097a7;
+}
