@@ -1,9 +1,11 @@
-import React, { ChangeEvent, FC } from "react";
+import React, { ChangeEvent, FC, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { IUploadButtonProps } from "../../interface/IUploadButton";
-
 const UploadButton: FC<IUploadButtonProps> = ({ onUpload, onCodeLoader }) => {
+  const [isLoading, setIsLoading] = useState(false);
   const handleFileInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setIsLoading(true);
     const file = event.target.files![0];
     if (!file) return;
 
@@ -15,23 +17,32 @@ const UploadButton: FC<IUploadButtonProps> = ({ onUpload, onCodeLoader }) => {
     };
 
     reader.readAsText(file);
+    setIsLoading(false);
   };
 
   return (
-    <div>
+    <>
       <input
         type="file"
         id="file-input"
         onChange={handleFileInputChange}
-        style={{ display: "none", color: "white" }}
-      />{" "}
+        style={{ display: isLoading ? "none" : "block", color: "white" }}
+      />
       <label htmlFor="file-input">
-        <FontAwesomeIcon
-          icon="upload"
-          style={{ color: "white", marginLeft: "10px" }}
-        />{" "}
-      </label>{" "}
-    </div>
+        {isLoading ? (
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            style={{ color: "white", marginLeft: "10px" }}
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon="upload"
+            style={{ color: "white", marginLeft: "10px" }}
+          />
+        )}
+      </label>
+    </>
   );
 };
 

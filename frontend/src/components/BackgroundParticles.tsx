@@ -5,11 +5,10 @@ import React from "react";
 
 const TSPR: React.FC = () => {
   const particlesInit = useCallback(async (engine: any) => {
-    await loadFull(engine)
+    await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: any) => {
-  }, []);
+  const particlesLoaded = useCallback(async (container: any) => {}, []);
 
   return (
     <Particles
@@ -52,7 +51,9 @@ const TSPR: React.FC = () => {
           color: {
             value: ["#b3f18f", "#f5b427", "#8a2697", "#00000", "#ffffff"],
           },
-
+          // Установка ускорения частиц
+          acceleration_min: 0, // Устанавливаем ускорение в ноль
+          acceleration_max: 0, // Устанавливаем ускорение в ноль
           links: {
             blink: false,
             enable: true,
@@ -63,7 +64,7 @@ const TSPR: React.FC = () => {
             width: 1,
           },
           collisions: {
-            enable: true,
+            enable: false,
           },
           move: {
             direction: "none",
@@ -75,11 +76,6 @@ const TSPR: React.FC = () => {
             random: false,
             speed: 3,
             straight: false,
-            attract: {
-              enable: false,
-              rotateX: 3000,
-              rotateY: 3000
-            }
           },
           number: {
             density: {

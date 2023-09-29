@@ -26,7 +26,6 @@ button#run-button:hover {
 }
 
 #output {
-    width: 100%;
     resize: none;
     color: #fb871e;
     font-size: 18px;

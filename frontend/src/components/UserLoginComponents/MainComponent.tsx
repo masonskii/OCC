@@ -1,11 +1,11 @@
 import React, {StrictMode } from "react";
-import { Layout } from "./LayoutOnParticles";
+import MergeLoginComponents from "./MergeLoginComponents";
 import "../../static/css/MainLayout.css";
 import TSPR from "../BackgroundParticles";
 
-export const MainLayout = () => (
+export const MainComponent = () => (
   <>
-    <Layout />
+    <MergeLoginComponents />
     <StrictMode>
       <TSPR />
     </StrictMode>{" "}
